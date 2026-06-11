@@ -1,0 +1,21 @@
+TabbedContent {
+    height: 1fr;
+}
+
+VerticalScroll {
+    padding: 0 1;
+}
+
+.tweet-card {
+    border: round $surface-lighten-2;
+    padding: 0 1;
+    margin-bottom: 1;
+}
+
+#status-bar {
+    dock: bottom;
+    height: 1;
+    padding: 0 1;
+    background: $surface;
+    color: $text-muted;
+}

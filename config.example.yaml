@@ -1,0 +1,44 @@
+# X Terminal configuration
+#
+# Copy this file to config.yaml and fill in your own categories/accounts.
+# The X API bearer token is read from the environment variable below
+# (never put the token itself in this file).
+
+# Environment variable holding your X API v2 bearer token.
+bearer_token_env: X_BEARER_TOKEN
+
+# Seconds between polls of each category. The recent-search endpoint on the
+# Basic tier allows 60 requests / 15 min, so keep:
+#   (number of categories * 900 / poll_interval) <= 60
+# e.g. 4 categories at a 60s interval = 60 req/15min (exactly at the limit).
+poll_interval: 60
+
+# Drop retweets / replies from the feed.
+exclude_retweets: true
+exclude_replies: false
+
+# Max tweets kept per category panel (oldest are dropped).
+max_tweets_per_category: 200
+
+# Your categories. Each category is one search query against the accounts
+# listed, so tweets show up in every category whose account list matches.
+# color: any Rich color name (cyan, green, magenta, yellow, red, blue, ...)
+categories:
+  - name: AI
+    color: cyan
+    accounts:
+      - AnthropicAI
+      - OpenAI
+      - GoogleDeepMind
+
+  - name: Markets
+    color: green
+    accounts:
+      - DeItaone
+      - unusual_whales
+
+  - name: Tech News
+    color: magenta
+    accounts:
+      - TechCrunch
+      - verge
