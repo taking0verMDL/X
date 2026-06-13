@@ -10,6 +10,27 @@ from .data import statsbomb
 from .backtest import TOURNAMENTS
 
 
+# Role premiums multiply a player's positional pass estimate to capture the
+# extremes within a position — where individual role, not the slot, decides
+# volume. Calibrated from World Cup data (e.g. an isolated #9 like Almoez Ali
+# made ~14 passes vs the ~22 striker line → ~0.6×; ball-playing CBs and deep
+# playmakers sit well above their position line).
+ROLE_PREMIUMS = {
+    "": 1.00,                # ordinary occupant of the position
+    "default": 1.00,
+    "lead_cb": 1.20,         # primary build-up centre-back (steps into midfield)
+    "deep_playmaker": 1.10,  # deep-lying central playmaker
+    "regista": 1.15,         # ball-dominant single pivot
+    "outlet": 1.15,          # forward/winger who drops in to link play
+    "target_man": 0.60,      # isolated striker in a low block — starved of touches
+    "runner": 0.72,          # off-ball winger/forward who stays high and chases
+}
+
+
+def role_premium(role: str) -> float:
+    return ROLE_PREMIUMS.get(role, 1.0)
+
+
 @dataclass
 class FormationModel:
     """Roster-independent pass model built on two stable signals:
@@ -106,16 +127,17 @@ class FormationModel:
                        lineup: list[tuple]) -> list[tuple[str, str, float]]:
         """Predict passes for a starting XI.
 
-        Each entry is (name, position_group) or (name, position_group,
-        premium). The base comes from the position's convex possession curve;
-        `premium` (default 1.0) bumps designated ball-players — a primary
-        build-up center-back or deep playmaker sits above the positional
-        average, which is where individual role finally enters the model.
+        Each entry is (name, position_group) or (name, position_group, role),
+        where role is a key in ROLE_PREMIUMS (e.g. "lead_cb", "target_man") or
+        a raw float multiplier. The base comes from the position's convex
+        possession curve; the role premium captures the within-position
+        extremes — where individual role, not the slot, decides volume.
         """
         out = []
         for entry in lineup:
             name, grp = entry[0], entry[1]
-            premium = entry[2] if len(entry) > 2 else 1.0
+            role = entry[2] if len(entry) > 2 else 1.0
+            premium = role if isinstance(role, (int, float)) else role_premium(role)
             out.append((name, grp, self.passes_for_group(grp, possession_share) * premium))
         return sorted(out, key=lambda x: -x[2])
 

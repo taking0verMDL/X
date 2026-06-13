@@ -1,0 +1,40 @@
+# Switzerland vs Qatar — example match spec for `passbot simulate`.
+# possession is the estimated share of the ball (the two teams should sum to 1).
+# Each lineup entry: name, pos (GK/CB/FB/DM/CM/AM/W/ST), and an optional role
+# premium tag (see ROLE_PREMIUMS): lead_cb, deep_playmaker, regista, outlet,
+# target_man, runner. Omit role for an ordinary occupant of the position.
+match: Switzerland vs Qatar
+train: [wc2018, wc2022]
+
+teams:
+  - name: Switzerland
+    formation: "3-4-3"
+    possession: 0.70
+    lineup:
+      - {name: M. Akanji,    pos: CB, role: lead_cb}
+      - {name: N. Elvedi,    pos: CB}
+      - {name: D. Zakaria,   pos: CB}
+      - {name: G. Xhaka,     pos: DM, role: deep_playmaker}
+      - {name: R. Freuler,   pos: CM}
+      - {name: R. Rodriguez, pos: FB}
+      - {name: M. Aebischer, pos: FB}
+      - {name: R. Vargas,    pos: W}
+      - {name: D. Ndoye,     pos: W}
+      - {name: B. Embolo,    pos: ST}
+      - {name: G. Kobel,     pos: GK}
+
+  - name: Qatar
+    formation: "4-2-3-1"
+    possession: 0.30
+    lineup:
+      - {name: A. Al-Oui,       pos: FB}
+      - {name: H. Ahmed,        pos: FB}
+      - {name: P. Miguel,       pos: CB}
+      - {name: B. Khoukhi,      pos: CB}
+      - {name: J. Gaber,        pos: DM}
+      - {name: I. Laye,         pos: DM}
+      - {name: A. Afif,         pos: W,  role: outlet}
+      - {name: A. Madibo,       pos: AM, role: deep_playmaker}
+      - {name: E. Junior,       pos: W,  role: runner}
+      - {name: Y. Abdelrazzaq,  pos: ST, role: target_man}
+      - {name: M. Abunada,      pos: GK}

@@ -6,6 +6,9 @@ import sys
 from .backtest import TOURNAMENTS, run_backtest
 from .predict import Predictor
 from .data import apifootball
+from .simulate import simulate_match, save_predictions, format_result
+from .grading import grade, load_actuals, format_grade
+import json
 
 DEFAULT_MODEL_PATH = "passbot_model.pkl"
 
@@ -59,6 +62,22 @@ def _cmd_predict(args: argparse.Namespace) -> int:
     return 0
 
 
+def _cmd_simulate(args: argparse.Namespace) -> int:
+    result = simulate_match(args.match)
+    print(format_result(result))
+    if args.out:
+        save_predictions(result, args.out)
+        print(f"Saved predictions to {args.out} (grade them later with 'passbot grade').")
+    return 0
+
+
+def _cmd_grade(args: argparse.Namespace) -> int:
+    result = json.loads(open(args.predictions, encoding="utf-8").read())
+    actuals = load_actuals(args.actuals)
+    print(format_grade(grade(result, actuals)))
+    return 0
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(
         prog="passbot",
@@ -86,6 +105,16 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--fixture", type=int, help="API-Football fixture id (needs API key)")
     p.add_argument("--mock", action="store_true", help="use a built-in sample lineup")
     p.set_defaults(func=_cmd_predict)
+
+    s = sub.add_parser("simulate", help="predict a match from a lineup spec (matches/*.yaml)")
+    s.add_argument("match", help="path to a match spec YAML")
+    s.add_argument("--out", help="save predictions JSON here for later grading")
+    s.set_defaults(func=_cmd_simulate)
+
+    g = sub.add_parser("grade", help="score saved predictions against actual passes")
+    g.add_argument("--predictions", required=True, help="predictions JSON from 'simulate --out'")
+    g.add_argument("--actuals", required=True, help="actuals as JSON {name: passes} or CSV name,passes")
+    g.set_defaults(func=_cmd_grade)
 
     args = parser.parse_args(argv)
     return args.func(args)
