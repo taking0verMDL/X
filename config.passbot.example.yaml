@@ -1,0 +1,19 @@
+# passbot configuration (optional — the CLI works with flags alone).
+# Copy to config.passbot.yaml and edit if you prefer a config file.
+
+# Tournaments to train on. Available keys:
+#   wc2018, wc2022, euro2024, copa2024
+train_tournaments:
+  - wc2018
+  - wc2022
+
+# Where to store the trained model.
+model_path: passbot_model.pkl
+
+# Live data (API-Football) for fetching 2026 lineups and grading results.
+# The key is read from this environment variable, not stored here.
+api_football_key_env: API_FOOTBALL_KEY
+
+# Default expected minutes for a confirmed starter when no per-player history
+# is available (substitutes default lower).
+default_starter_minutes: 90

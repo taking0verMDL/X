@@ -5,3 +5,7 @@ __pycache__/
 venv/
 config.yaml
 .env
+
+# passbot: cached StatsBomb data and trained models
+passbot/cache/
+*.pkl
