@@ -106,9 +106,12 @@ def load_match(match: dict, competition: str, season: str) -> list[PlayerMatch]:
     agg: dict[int, dict] = {}
     team_passes = {home: 0, away: 0}
     starters: set[int] = set()
+    formation_by_team: dict[str, str] = {}
 
     for e in events:
         if e.get("type", {}).get("name") == "Starting XI":
+            team = e.get("team", {}).get("name", "")
+            formation_by_team[team] = str(e.get("tactics", {}).get("formation", ""))
             for p in e.get("tactics", {}).get("lineup", []):
                 pid = p.get("player", {}).get("id")
                 if pid is not None:
@@ -160,6 +163,7 @@ def load_match(match: dict, competition: str, season: str) -> list[PlayerMatch]:
             passes_completed=r["completed"],
             team_passes=team_passes.get(team, 0),
             opponent_passes=team_passes.get(opponent, 0),
+            formation=formation_by_team.get(team, ""),
         ))
     return rows
 

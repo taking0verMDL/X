@@ -35,6 +35,8 @@ class PlayerMatch:
     passes: int              # passes attempted (the target)
     passes_completed: int
 
+    formation: str = ""      # team formation, e.g. "433", "4231" (StatsBomb)
+
     # Match-level context, duplicated onto every player row for convenience.
     team_passes: int = 0     # total passes by this player's team
     opponent_passes: int = 0
