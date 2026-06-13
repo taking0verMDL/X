@@ -33,6 +33,10 @@ class FormationModel:
     poss_intercept: float = 0.0
     poss_slope: float = 1.0
     mean_match_passes: float = 1000.0
+    # Per position group: passes ≈ a + b * possession_share. Each position has
+    # its own sensitivity — center-backs and central mids climb steeply with
+    # possession, strikers and keepers barely move.
+    pos_poss_fit: dict[str, tuple[float, float]] = field(default_factory=dict)
 
     def fit(self, rows: list[PlayerMatch]) -> "FormationModel":
         # Group starters by (formation, team, match) to compute pass shares.
@@ -44,6 +48,13 @@ class FormationModel:
         share_acc: dict[str, dict[str, list[float]]] = defaultdict(lambda: defaultdict(list))
         pos_acc: dict[str, list[float]] = defaultdict(list)
         poss_x, poss_y, match_totals = [], [], []
+        # passes-vs-possession samples per position group
+        grp_xy: dict[str, tuple[list[float], list[float]]] = defaultdict(lambda: ([], []))
+        for r in rows:
+            if r.is_starter and r.minutes >= 80:
+                gx, gy = grp_xy[r.position_group]
+                gx.append(r.team_possession_share)
+                gy.append(r.passes)
 
         for (mid, team), players in by_team_match.items():
             team_total = players[0].team_passes
@@ -66,7 +77,19 @@ class FormationModel:
             slope, intercept = np.polyfit(poss_x, poss_y, 1)
             self.poss_slope, self.poss_intercept = float(slope), float(intercept)
         self.mean_match_passes = float(np.mean(match_totals)) if match_totals else 1000.0
+
+        for grp, (gx, gy) in grp_xy.items():
+            if len(gx) >= 10:
+                b, a = np.polyfit(gx, gy, 1)
+                self.pos_poss_fit[grp] = (float(a), float(b))
         return self
+
+    def passes_for_group(self, position_group: str, possession_share: float) -> float:
+        """Expected passes for a full-match starter of this position group at
+        the given team possession — the possession-sensitive per-position
+        model (center-backs steep, strikers nearly flat)."""
+        a, b = self.pos_poss_fit.get(position_group, (40.0, 0.0))
+        return max(0.0, a + b * possession_share)
 
     def team_total_passes(self, possession_share: float) -> float:
         return max(50.0, self.poss_intercept + self.poss_slope * possession_share)
@@ -78,19 +101,18 @@ class FormationModel:
         # Fall back to the pooled cross-formation share for that position.
         return self.share_by_pos.get(position, 1.0 / 11)
 
-    def predict_lineup(self, formation: str, possession_share: float,
+    def predict_lineup(self, possession_share: float,
                        lineup: list[tuple[str, str]]) -> list[tuple[str, str, float]]:
-        """Predict passes for a starting XI given as (name, position_slot).
+        """Predict passes for a starting XI given as (name, position_group).
 
-        Each player's passes = team pass budget (from possession) × the
-        player's share of the formation, with shares normalised across the XI
-        so they allocate the whole budget. No individual player history is
-        used — only role, formation, and the possession estimate.
+        Uses the possession-sensitive per-position model: each player's passes
+        come from their position group's passes-vs-possession curve at the
+        team's estimated possession. No individual player history is used —
+        only role and the possession estimate (which is where formation and
+        the quality gap between the teams come in).
         """
-        total = self.team_total_passes(possession_share)
-        shares = [self.position_share(formation, slot) for _, slot in lineup]
-        s = sum(shares) or 1.0
-        out = [(name, slot, sh / s * total) for (name, slot), sh in zip(lineup, shares)]
+        out = [(name, grp, self.passes_for_group(grp, possession_share))
+               for name, grp in lineup]
         return sorted(out, key=lambda x: -x[2])
 
 
