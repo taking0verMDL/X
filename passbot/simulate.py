@@ -5,7 +5,7 @@ from pathlib import Path
 
 import yaml
 
-from .formation import FormationModel, load_rows, team_press_tier
+from .formation import FormationModel, load_rows, team_press_tier, team_directness
 
 
 def simulate_match(spec_path: str | Path) -> dict:
@@ -31,13 +31,17 @@ def simulate_match(spec_path: str | Path) -> dict:
     out_teams = []
     for i, team in enumerate(teams):
         opp_press = press[1 - i] if len(teams) == 2 else "mid"
+        direct = team.get("directness")
+        direct = float(direct) if direct is not None else team_directness(team["name"])
         lineup = [(p["name"], p["pos"], p.get("role", 1.0)) for p in team["lineup"]]
-        preds = fm.predict_lineup(float(team["possession"]), lineup, opp_press=opp_press)
+        preds = fm.predict_lineup(float(team["possession"]), lineup,
+                                  opp_press=opp_press, directness=direct)
         out_teams.append({
             "name": team["name"],
             "formation": team.get("formation", ""),
             "possession": float(team["possession"]),
             "opp_press": opp_press,
+            "directness": round(direct, 2),
             "predictions": [
                 {"player": n, "pos": g, "predicted_passes": round(p, 1)}
                 for n, g, p in preds
@@ -54,9 +58,11 @@ def format_result(result: dict) -> str:
     lines = [result["match"], ""]
     for team in result["teams"]:
         press = team.get("opp_press", "mid")
+        direct = team.get("directness", 0.20)
+        style = "direct" if direct >= 0.23 else "patient" if direct <= 0.17 else "balanced"
         lines.append(f"=== {team['name']}  {team['formation']}  "
                      f"~{team['possession']*100:.0f}% possession  "
-                     f"(vs {press} press) ===")
+                     f"({style} style, vs {press} press) ===")
         lines.append(f"{'player':<18}{'pos':<5}{'passes':>7}")
         for p in team["predictions"]:
             lines.append(f"{p['player']:<18}{p['pos']:<5}{p['predicted_passes']:>7.0f}")

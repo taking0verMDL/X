@@ -59,6 +59,42 @@ TEAM_PRESS = {
 }
 
 
+# How a team's OWN directness changes its pass volume by position, as a
+# fractional change per +10 percentage points of long-ball share above the
+# ~20% average. Measured from WC data controlling for possession: a direct
+# (long-ball) side's build-up players pass far less (CB -12%/+10pp), wingers
+# fall hardest, the striker barely moves, and the keeper passes *more* (he
+# launches it). Patient sides are the mirror (negative long% delta -> boost).
+DIRECTNESS_SENS = {
+    "GK": +0.11, "CB": -0.12, "FB": -0.085, "DM": -0.10,
+    "CM": -0.12, "AM": -0.14, "W": -0.20, "ST": -0.11,
+}
+
+# Team directness = long-ball share (passes > 30yd) in WC 2018/2022. Higher =
+# more direct. ~0.20 is average. Used to auto-set a team's style.
+TEAM_DIRECTNESS = {
+    "Spain": 0.13, "Brazil": 0.14, "Argentina": 0.16, "Netherlands": 0.17,
+    "Belgium": 0.17, "United States": 0.17, "Germany": 0.18, "Portugal": 0.18,
+    "France": 0.19, "Japan": 0.19, "Croatia": 0.19, "England": 0.20,
+    "Mexico": 0.20, "Switzerland": 0.22, "Morocco": 0.21, "Ecuador": 0.21,
+    "Uruguay": 0.21, "Qatar": 0.22, "Poland": 0.22, "Senegal": 0.24,
+    "Cameroon": 0.25, "Sweden": 0.26, "Tunisia": 0.23, "Iran": 0.29,
+    "Saudi Arabia": 0.24, "Australia": 0.23, "Costa Rica": 0.23,
+}
+
+AVG_LONG = 0.20
+
+
+def directness_factor(position_group: str, long_share: float) -> float:
+    """Multiplier on a position's pass estimate for a team's directness."""
+    sens = DIRECTNESS_SENS.get(position_group, -0.10)
+    return max(0.3, 1.0 + sens * (long_share - AVG_LONG) / 0.10)
+
+
+def team_directness(team: str, default: float = AVG_LONG) -> float:
+    return TEAM_DIRECTNESS.get(team, default)
+
+
 def press_tier(rating: float) -> str:
     """Map a numeric press rating (def-action height) to a tier."""
     if rating >= 55:
@@ -167,7 +203,8 @@ class FormationModel:
         return self.share_by_pos.get(position, 1.0 / 11)
 
     def predict_lineup(self, possession_share: float, lineup: list[tuple],
-                       opp_press: str = "mid") -> list[tuple[str, str, float]]:
+                       opp_press: str = "mid",
+                       directness: float = AVG_LONG) -> list[tuple[str, str, float]]:
         """Predict passes for a starting XI.
 
         Each entry is (name, position_group) or (name, position_group, role),
@@ -176,17 +213,24 @@ class FormationModel:
         possession curve; the role premium captures the within-position
         extremes — where individual role, not the slot, decides volume.
 
+        `directness` is the team's own long-ball share (~0.20 average). A
+        direct side makes fewer passes at the same possession — its build-up
+        players and wingers fall most, the keeper rises. This changes the team
+        TOTAL (unlike press, it is not renormalised).
+
         `opp_press` ("low"/"mid"/"high") is the OPPONENT's defensive style: a
         low block pools passes at the build-up players, a high press skips the
         ball to the forwards. It redistributes who touches the ball while
-        preserving the team's possession budget.
+        preserving the (post-directness) possession budget.
         """
         base = []
         for entry in lineup:
             name, grp = entry[0], entry[1]
             role = entry[2] if len(entry) > 2 else 1.0
             premium = role if isinstance(role, (int, float)) else role_premium(role)
-            base.append((name, grp, self.passes_for_group(grp, possession_share) * premium))
+            val = self.passes_for_group(grp, possession_share) * premium
+            val *= directness_factor(grp, directness)  # team style changes the total
+            base.append((name, grp, val))
 
         mult = PRESS_MULT.get(opp_press, {})
         if mult:
