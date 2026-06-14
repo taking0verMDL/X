@@ -31,6 +31,49 @@ def role_premium(role: str) -> float:
     return ROLE_PREMIUMS.get(role, 1.0)
 
 
+# How the OPPONENT's press redistributes passes within a team, at fixed
+# possession. Measured from WC data (controlling for possession): a deep block
+# lets the build-up recycle freely (CBs +~10%) while starving the lone striker
+# (-~15%); a high press does the reverse — the ball skips midfield and is
+# played direct to the forwards. Multipliers are relative to a neutral
+# opponent and are renormalised so the team's possession budget is preserved —
+# press changes *who* touches the ball, not the team total.
+PRESS_MULT = {
+    "low":  {"GK": 0.95, "CB": 1.08, "FB": 1.02, "DM": 1.03, "CM": 1.05,
+             "AM": 1.00, "W": 0.97, "ST": 0.85},   # opponent sits in a deep block
+    "mid":  {},                                      # neutral (all 1.0)
+    "high": {"GK": 1.05, "CB": 0.92, "FB": 0.98, "DM": 0.97, "CM": 0.95,
+             "AM": 1.00, "W": 1.03, "ST": 1.18},    # opponent presses high
+}
+
+# Team press ratings = mean height (x, 0-120) of a team's defensive actions in
+# WC 2018/2022. Higher = presses higher up the pitch. Used to auto-pick the
+# opponent's press tier when the opponent is one of these teams.
+TEAM_PRESS = {
+    "Germany": 61, "Spain": 60, "Canada": 58, "Ecuador": 58, "England": 57,
+    "Brazil": 55, "Argentina": 55, "United States": 54, "Netherlands": 53,
+    "France": 53, "Portugal": 52, "Japan": 52, "Belgium": 51, "Croatia": 51,
+    "Morocco": 50, "Switzerland": 50, "Senegal": 49, "Mexico": 49, "Uruguay": 48,
+    "Poland": 48, "Egypt": 47, "Sweden": 46, "Peru": 45, "Qatar": 45,
+    "Costa Rica": 45, "Tunisia": 46, "Saudi Arabia": 47, "Iran": 46,
+}
+
+
+def press_tier(rating: float) -> str:
+    """Map a numeric press rating (def-action height) to a tier."""
+    if rating >= 55:
+        return "high"
+    if rating <= 48:
+        return "low"
+    return "mid"
+
+
+def team_press_tier(team: str, default: str = "mid") -> str:
+    """Press tier for a known team, else the default."""
+    r = TEAM_PRESS.get(team)
+    return press_tier(r) if r is not None else default
+
+
 @dataclass
 class FormationModel:
     """Roster-independent pass model built on two stable signals:
@@ -123,8 +166,8 @@ class FormationModel:
         # Fall back to the pooled cross-formation share for that position.
         return self.share_by_pos.get(position, 1.0 / 11)
 
-    def predict_lineup(self, possession_share: float,
-                       lineup: list[tuple]) -> list[tuple[str, str, float]]:
+    def predict_lineup(self, possession_share: float, lineup: list[tuple],
+                       opp_press: str = "mid") -> list[tuple[str, str, float]]:
         """Predict passes for a starting XI.
 
         Each entry is (name, position_group) or (name, position_group, role),
@@ -132,14 +175,30 @@ class FormationModel:
         a raw float multiplier. The base comes from the position's convex
         possession curve; the role premium captures the within-position
         extremes — where individual role, not the slot, decides volume.
+
+        `opp_press` ("low"/"mid"/"high") is the OPPONENT's defensive style: a
+        low block pools passes at the build-up players, a high press skips the
+        ball to the forwards. It redistributes who touches the ball while
+        preserving the team's possession budget.
         """
-        out = []
+        base = []
         for entry in lineup:
             name, grp = entry[0], entry[1]
             role = entry[2] if len(entry) > 2 else 1.0
             premium = role if isinstance(role, (int, float)) else role_premium(role)
-            out.append((name, grp, self.passes_for_group(grp, possession_share) * premium))
-        return sorted(out, key=lambda x: -x[2])
+            base.append((name, grp, self.passes_for_group(grp, possession_share) * premium))
+
+        mult = PRESS_MULT.get(opp_press, {})
+        if mult:
+            adjusted = [(n, g, v * mult.get(g, 1.0)) for n, g, v in base]
+            # Renormalise so the team total (possession budget) is unchanged —
+            # press only moves passes between players, not the team total.
+            total_base = sum(v for _, _, v in base)
+            total_adj = sum(v for _, _, v in adjusted) or 1.0
+            scale = total_base / total_adj
+            base = [(n, g, v * scale) for n, g, v in adjusted]
+
+        return sorted(base, key=lambda x: -x[2])
 
 
 def load_rows(tournament_keys: list[str], limit: int | None = None) -> list[PlayerMatch]:
