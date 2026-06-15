@@ -116,6 +116,32 @@ def team_directness(team: str, default: float = AVG_LONG) -> float:
     return TEAM_DIRECTNESS.get(team, default)
 
 
+# Team possession-control ratings = observed share of passes in WC2026 so far.
+# A prior for predicting who controls the ball in a future matchup; it sharpens
+# as more games (and common opponents) accumulate. Re-derive with calib/.
+TEAM_CONTROL = {
+    "Spain": 0.74, "Switzerland": 0.70, "Turkey": 0.70, "Netherlands": 0.63,
+    "Germany": 0.70, "Belgium": 0.54, "Haiti": 0.53, "Ecuador": 0.52,
+    "Tunisia": 0.51, "Brazil": 0.50, "Morocco": 0.50, "Sweden": 0.49,
+    "Ivory Coast": 0.48, "Scotland": 0.47, "Egypt": 0.46, "USA": 0.55,
+    "Japan": 0.37, "Australia": 0.30, "Qatar": 0.30,
+}
+
+
+def predict_possession(team: str, opponent: str, default: float = 0.5) -> float:
+    """Estimate a team's possession share vs an opponent from control ratings.
+
+    Combines both teams' control tendencies: share_A = c_A / (c_A + c_B). With
+    one game each this is opponent-confounded, but it's a reasonable prior and
+    improves as ratings are averaged over more rounds.
+    """
+    ca = TEAM_CONTROL.get(team)
+    cb = TEAM_CONTROL.get(opponent)
+    if ca is None or cb is None:
+        return default
+    return ca / (ca + cb)
+
+
 def press_tier(rating: float) -> str:
     """Map a numeric press rating (def-action height) to a tier."""
     if rating >= 55:

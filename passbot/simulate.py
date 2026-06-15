@@ -5,7 +5,8 @@ from pathlib import Path
 
 import yaml
 
-from .formation import FormationModel, load_rows, team_press_tier, team_directness
+from .formation import (FormationModel, load_rows, team_press_tier,
+                        team_directness, predict_possession)
 
 
 def simulate_match(spec_path: str | Path) -> dict:
@@ -27,19 +28,27 @@ def simulate_match(spec_path: str | Path) -> dict:
     # Each team's press style (how it defends), used as the opponent's
     # context for the other team.
     press = [t.get("press") or team_press_tier(t["name"]) for t in teams]
+    # Possession: use the spec value if given, else predict from team control
+    # ratings (so a future match needs only lineups + team names).
+    if len(teams) == 2 and any(t.get("possession") is None for t in teams):
+        poss = [predict_possession(teams[0]["name"], teams[1]["name"])]
+        poss.append(1 - poss[0])
+    else:
+        poss = [t.get("possession") for t in teams]
 
     out_teams = []
     for i, team in enumerate(teams):
         opp_press = press[1 - i] if len(teams) == 2 else "mid"
         direct = team.get("directness")
         direct = float(direct) if direct is not None else team_directness(team["name"])
+        team_poss = float(poss[i]) if poss[i] is not None else 0.5
         lineup = [(p["name"], p["pos"], p.get("role", 1.0)) for p in team["lineup"]]
-        preds = fm.predict_lineup(float(team["possession"]), lineup,
+        preds = fm.predict_lineup(team_poss, lineup,
                                   opp_press=opp_press, directness=direct)
         out_teams.append({
             "name": team["name"],
             "formation": team.get("formation", ""),
-            "possession": float(team["possession"]),
+            "possession": team_poss,
             "opp_press": opp_press,
             "directness": round(direct, 2),
             "predictions": [
