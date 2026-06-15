@@ -18,9 +18,14 @@ from .backtest import TOURNAMENTS
 ROLE_PREMIUMS = {
     "": 1.00,                # ordinary occupant of the position
     "default": 1.00,
-    "lead_cb": 1.20,         # primary build-up centre-back (steps into midfield)
-    "deep_playmaker": 1.10,  # deep-lying central playmaker
-    "regista": 1.15,         # ball-dominant single pivot
+    "lead_cb": 1.05,         # build-up centre-back — only slightly above average
+                             # (calibrated to WC2026: Laporte ~100 vs ~104 base,
+                             # well below the pivot; the CB does NOT out-pass the
+                             # regista, which the old 1.20 wrongly implied)
+    "deep_playmaker": 1.05,  # advanced-8 / second pivot (Pedri ran below the
+                             # deep-pivot line, so only a small bump)
+    "regista": 1.20,         # ball-dominant single/deep pivot (Rodri 127 — the
+                             # genuine top passer of a possession side, above CBs)
     "outlet": 1.15,          # forward/winger who drops in to link play
     "target_man": 0.60,      # isolated striker in a low block — starved of touches
     "runner": 0.72,          # off-ball winger/forward who stays high and chases
@@ -38,12 +43,13 @@ def role_premium(role: str) -> float:
 # played direct to the forwards. Multipliers are relative to a neutral
 # opponent and are renormalised so the team's possession budget is preserved —
 # press changes *who* touches the ball, not the team total.
+# Magnitudes softened after WC2026 calibration (effects were over-stacking).
 PRESS_MULT = {
-    "low":  {"GK": 0.95, "CB": 1.08, "FB": 1.02, "DM": 1.03, "CM": 1.05,
-             "AM": 1.00, "W": 0.97, "ST": 0.85},   # opponent sits in a deep block
+    "low":  {"GK": 0.96, "CB": 1.04, "FB": 1.01, "DM": 1.02, "CM": 1.03,
+             "AM": 1.00, "W": 0.98, "ST": 0.88},   # opponent sits in a deep block
     "mid":  {},                                      # neutral (all 1.0)
-    "high": {"GK": 1.05, "CB": 0.92, "FB": 0.98, "DM": 0.97, "CM": 0.95,
-             "AM": 1.00, "W": 1.03, "ST": 1.18},    # opponent presses high
+    "high": {"GK": 1.04, "CB": 0.95, "FB": 0.99, "DM": 0.98, "CM": 0.97,
+             "AM": 1.00, "W": 1.02, "ST": 1.12},    # opponent presses high
 }
 
 # Team press ratings = mean height (x, 0-120) of a team's defensive actions in
@@ -65,9 +71,13 @@ TEAM_PRESS = {
 # (long-ball) side's build-up players pass far less (CB -12%/+10pp), wingers
 # fall hardest, the striker barely moves, and the keeper passes *more* (he
 # launches it). Patient sides are the mirror (negative long% delta -> boost).
+# Magnitudes reduced ~40% after WC2026 calibration: the style effects are real
+# but compound too hard with the possession curve at the extremes (a patient
+# *and* high-possession side like Spain was over-boosted — its CBs hit ~100,
+# not the 120+ the stacked multipliers implied).
 DIRECTNESS_SENS = {
-    "GK": +0.11, "CB": -0.12, "FB": -0.085, "DM": -0.10,
-    "CM": -0.12, "AM": -0.14, "W": -0.20, "ST": -0.11,
+    "GK": +0.07, "CB": -0.07, "FB": -0.05, "DM": -0.06,
+    "CM": -0.07, "AM": -0.08, "W": -0.12, "ST": -0.07,
 }
 
 # Team directness = long-ball share (passes > 30yd) in WC 2018/2022. Higher =
