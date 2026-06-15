@@ -22,10 +22,11 @@ ROLE_PREMIUMS = {
                              # (calibrated to WC2026: Laporte ~100 vs ~104 base,
                              # well below the pivot; the CB does NOT out-pass the
                              # regista, which the old 1.20 wrongly implied)
-    "deep_playmaker": 1.05,  # advanced-8 / second pivot (Pedri ran below the
-                             # deep-pivot line, so only a small bump)
-    "regista": 1.20,         # ball-dominant single/deep pivot (Rodri 127 — the
-                             # genuine top passer of a possession side, above CBs)
+    "deep_playmaker": 1.18,  # very good deep mid (de Jong 73, Caicedo 60 — ~1.2x
+                             # the calibrated DM base)
+    "regista": 1.40,         # elite ball-dominant metronome (Rodri 126,
+                             # Çalhanoğlu 105 — ~1.5x base, world's best deep
+                             # passers do this every game)
     "outlet": 1.15,          # forward/winger who drops in to link play
     "target_man": 0.60,      # isolated striker in a low block — starved of touches
     "runner": 0.72,          # off-ball winger/forward who stays high and chases
@@ -93,6 +94,16 @@ TEAM_DIRECTNESS = {
 }
 
 AVG_LONG = 0.20
+
+# Per-position calibration to real WC2026 results (187 starters, 9 games). The
+# StatsBomb-trained curves nail center-backs and keepers but carry too much
+# volume for everyone else — especially strikers (~2x) and wide/attacking
+# players. Multipliers = actual/predicted, validated leave-one-game-out
+# (MAE 14.5 -> 11.0). Re-derive with calib/calibrate.py as more games arrive.
+POS_CALIB = {
+    "GK": 0.93, "CB": 1.00, "FB": 0.72, "DM": 0.80,
+    "CM": 0.81, "AM": 0.69, "W": 0.68, "ST": 0.52,
+}
 
 
 def directness_factor(position_group: str, long_share: float) -> float:
@@ -198,9 +209,11 @@ class FormationModel:
     def passes_for_group(self, position_group: str, possession_share: float) -> float:
         """Expected passes for a full-match starter of this position group at
         the given team possession — a convex per-position curve (center-backs
-        and mids surge at high possession, strikers stay flat)."""
+        and mids surge at high possession, strikers stay flat), scaled by a
+        real-data calibration factor (see POS_CALIB)."""
         coeffs = self.pos_poss_fit.get(position_group, (0.0, 0.0, 40.0))
-        return max(0.0, float(np.polyval(coeffs, possession_share)))
+        base = max(0.0, float(np.polyval(coeffs, possession_share)))
+        return base * POS_CALIB.get(position_group, 1.0)
 
     def team_total_passes(self, possession_share: float) -> float:
         return max(50.0, self.poss_intercept + self.poss_slope * possession_share)
