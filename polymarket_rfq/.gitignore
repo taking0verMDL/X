@@ -1,0 +1,15 @@
+# Your real config (may reference combos/sizing you don't want public)
+config.yaml
+
+# Python
+__pycache__/
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.venv/
+venv/
+
+# Never commit secrets
+.env

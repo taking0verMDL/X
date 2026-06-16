@@ -1,0 +1,63 @@
+# Polymarket Combos RFQ maker configuration
+#
+# Copy this file to config.yaml and fill in your combos. Secrets are read
+# from environment variables and must NEVER be put in this file:
+#
+#   PRIVATE_KEY                - EOA private key that signs your orders
+#   POLYMARKET_WALLET_ADDRESS  - your funded Polymarket (proxy) wallet
+#   POLYMARKET_API_KEY         - CLOB API key
+#   POLYMARKET_API_SECRET      - CLOB API secret
+#   POLYMARKET_API_PASSPHRASE  - CLOB API passphrase
+#
+# (Override the variable names with the `env:` block at the bottom if yours
+# differ.)
+
+# ---- Global maker behaviour -------------------------------------------------
+
+# Where the collateral for your quotes comes from:
+#   collateral - use pUSD balance (default)
+#   inventory  - use Combo positions you already hold
+quote_source: collateral
+
+# Default full spread applied around your reference (fair) price.
+# 0.04 means you quote +/- 0.02 around reference. Per-combo `spread` overrides.
+default_spread: 0.04
+
+# Largest size (shares / notional) you'll ever quote on a single RFQ.
+# A requested size larger than this is quoted as a partial fill at max_quote_size.
+max_quote_size: 50
+
+# Clamp every quote into this price band (probabilities, 0..1) so a bad
+# reference can never produce a <0 or >1 quote.
+min_price: 0.02
+max_price: 0.98
+
+# Last Look: when true, re-confirm a quote after it's selected but before it
+# executes (1s window). Lets you bail if your fair value moved. The maker
+# confirms by default; wire your own staleness check into pricing.py.
+last_look: true
+
+# Connection
+ws_url: "wss://combos-rfq-gateway-quoter.polymarket.com/ws/rfq"
+
+# ---- Per-combo pricing ------------------------------------------------------
+# SAFE DEFAULT: the bot only quotes combos listed here. Anything not listed
+# (or disabled) is skipped. `reference` is YOUR fair value for the YES side.
+#
+# TODO: `reference` is a static stub. Replace with a live pricing source
+#       (see pricing.py -> PricingEngine.reference_price) before trading real
+#       size --- a stale reference is how a market maker loses money.
+combos:
+  - condition_id: "0xEXAMPLE_REPLACE_ME"
+    reference: 0.45      # fair value for YES, 0..1
+    spread: 0.05         # optional per-combo override of default_spread
+    max_size: 25         # optional per-combo override of max_quote_size
+    enabled: true
+
+# ---- Environment variable names (override only if yours differ) -------------
+env:
+  private_key: PRIVATE_KEY
+  wallet_address: POLYMARKET_WALLET_ADDRESS
+  api_key: POLYMARKET_API_KEY
+  api_secret: POLYMARKET_API_SECRET
+  api_passphrase: POLYMARKET_API_PASSPHRASE

@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "polymarket-rfq"
+version = "0.1.0"
+description = "A market-maker bot that answers Polymarket Combos RFQ quote requests over WebSocket"
+requires-python = ">=3.10"
+dependencies = [
+    # Polymarket's async client (provides AsyncSecureClient + RFQ session).
+    # The docs reference `pip install polymarket-client`; pin once you've
+    # confirmed the version whose API matches maker.py.
+    "polymarket-client",
+    "pyyaml>=6.0",
+]
+
+[project.scripts]
+polymarket-rfq = "polymarket_rfq.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["polymarket_rfq*"]
