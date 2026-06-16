@@ -16,20 +16,39 @@ from .backtest import TOURNAMENTS
 # made ~14 passes vs the ~22 striker line → ~0.6×; ball-playing CBs and deep
 # playmakers sit well above their position line).
 ROLE_PREMIUMS = {
-    "": 1.00,                # ordinary occupant of the position
+    "": 1.00,
     "default": 1.00,
-    "lead_cb": 1.05,         # build-up centre-back — only slightly above average
-                             # (calibrated to WC2026: Laporte ~100 vs ~104 base,
-                             # well below the pivot; the CB does NOT out-pass the
-                             # regista, which the old 1.20 wrongly implied)
-    "deep_playmaker": 1.18,  # very good deep mid (de Jong 73, Caicedo 60 — ~1.2x
-                             # the calibrated DM base)
-    "regista": 1.40,         # elite ball-dominant metronome (Rodri 126,
-                             # Çalhanoğlu 105 — ~1.5x base, world's best deep
-                             # passers do this every game)
-    "outlet": 1.15,          # forward/winger who drops in to link play
-    "target_man": 0.60,      # isolated striker in a low block — starved of touches
-    "runner": 0.72,          # off-ball winger/forward who stays high and chases
+
+    # --- Center-backs ---
+    "ball_playing_cb": 1.10,   # steps out, primary distributor (Saliba, van Dijk)
+    "lead_cb": 1.05,           # build-up CB (slight bump)
+    "stopper_cb": 0.92,        # aggressive defender, less on the ball
+
+    # --- Full-backs (these vary the MOST by team/system) ---
+    "inverted_fb": 1.30,       # tucks into midfield in build-up (Koundé, Gvardiol)
+    "attacking_fb": 1.22,      # overlapping wing-back, high volume (Théo, Hakimi)
+    "wing_back": 1.12,         # wide in a back-5
+    "defensive_fb": 0.85,      # stays home
+
+    # --- Defensive / central mids ---
+    "regista": 1.40,           # elite ball-dominant metronome (Rodri, Çalhanoğlu)
+    "deep_playmaker": 1.18,    # deep distributor / lone anchor (Tchouaméni, de Jong)
+    "advanced_playmaker": 1.12,# creative 8 that gets on the ball high
+    "box_to_box": 1.00,        # all-action 8 (Valverde, Bellingham)
+    "anchor": 0.90,            # destroyer/screener, wins ball not passes (Ugarte)
+
+    # --- Attacking mids / wide ---
+    "creator": 1.12,           # classic 10 / link, drops to receive
+    "wide_playmaker": 1.15,    # winger who drifts in to create (Olise)
+    "outlet": 1.15,            # low-block creative outlet
+    "false_9": 1.30,           # forward who drops deep to link (gets mid-like touches)
+    "inverted_winger": 0.92,
+    "runner": 0.72,            # off-ball winger/forward who chases (Doku, Doué)
+
+    # --- Strikers (calibrated ST base is already low ~13) ---
+    "target_man": 0.95,        # holds up & links — relatively more for a #9
+    "poacher": 0.70,           # pure finisher, stays high (Mbappé, Jackson)
+    "isolated_st": 0.60,       # starved #9 in a deep block (Almoez Ali type)
 }
 
 
