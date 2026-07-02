@@ -12,7 +12,8 @@ from __future__ import annotations
 import argparse
 import sys
 
-from .model import TeamRating, load_rosters, matchup, rate_teams, write_ratings_csv
+from .model import (TeamRating, load_rosters, matchup, projected_score,
+                    rate_teams, write_ratings_csv)
 
 
 def _print_table(ratings: list[TeamRating], detail: bool) -> None:
@@ -63,8 +64,11 @@ def main(argv: list[str] | None = None) -> None:
         a = _find_team(ratings, names[0])
         b = _find_team(ratings, names[1])
         spread, p = matchup(a, b)
+        pts_a, pts_b = projected_score(a, b)
         fav, dog, line = (a, b, spread) if spread >= 0 else (b, a, -spread)
-        print(f"{a.team} vs {b.team}: {fav.team} -{line:.1f} "
+        print(f"{a.team} vs {b.team}: {fav.team} -{line:.1f} | "
+              f"total {pts_a + pts_b:.1f} | "
+              f"proj {a.team} {pts_a:.0f}, {b.team} {pts_b:.0f} "
               f"({a.team} win prob {p:.0%})")
         return
 

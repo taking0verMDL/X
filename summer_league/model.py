@@ -72,6 +72,16 @@ POINTS_SCALE = 3.2
 # Std dev of a single SL game margin, for win probabilities.
 GAME_MARGIN_SD = 13.0
 
+# Totals. SL games are 40 minutes (4x10), not 48. BASE_TOTAL is the combined
+# regulation score between two average SL teams — a prior from typical Vegas
+# SL scoring (team scores high-80s), to be recalibrated once games are played.
+BASE_TOTAL = 178.0
+
+# Share of a team's rating (margin vs. average) that shows up as extra
+# scoring, vs. suppressing the opponent. SL margins are offense-driven:
+# talent gaps mean more buckets, not more stops.
+OFF_SHARE = 0.7
+
 ROOKIE_TIERS = {"lottery_rookie", "first_round_rookie", "second_round_rookie",
                 "undrafted_rookie"}
 
@@ -184,6 +194,24 @@ def matchup(a: TeamRating, b: TeamRating) -> tuple[float, float]:
     spread = a.rating - b.rating
     win_prob = 0.5 * (1.0 + math.erf(spread / (GAME_MARGIN_SD * math.sqrt(2.0))))
     return spread, win_prob
+
+
+def projected_score(a: TeamRating, b: TeamRating) -> tuple[float, float]:
+    """Projected regulation score (a_points, b_points) for a 40-minute game.
+
+    Each team's rating is split into an offensive share (scores more) and a
+    defensive share (allows less), so a - b reproduces the spread and
+    a + b gives the game total.
+    """
+    pts_a = BASE_TOTAL / 2 + OFF_SHARE * a.rating - (1 - OFF_SHARE) * b.rating
+    pts_b = BASE_TOTAL / 2 + OFF_SHARE * b.rating - (1 - OFF_SHARE) * a.rating
+    return pts_a, pts_b
+
+
+def game_total(a: TeamRating, b: TeamRating) -> float:
+    """Projected combined score: better teams push the total up."""
+    pts_a, pts_b = projected_score(a, b)
+    return pts_a + pts_b
 
 
 # --------------------------------------------------------------------------

@@ -62,6 +62,12 @@ everything else refines the estimate.
    `3.2 × (strength − league mean)`, in points per game.
 4. Matchup: spread = rating difference; win probability assumes a ~13-point
    standard deviation on SL game margins.
+5. Totals: SL games are **40 minutes**, not 48. `BASE_TOTAL` (178) is the
+   combined regulation score between two average teams — a prior, not a fit.
+   Each team's rating splits 70/30 into scoring more vs. allowing less
+   (`OFF_SHARE`), so better teams push the total up while the score
+   difference still equals the spread. Recalibrate `BASE_TOTAL` against
+   actual scores once games are played.
 
 All constants live at the top of `summer_league/model.py` and are meant to
 be retuned as results come in.
