@@ -15,9 +15,10 @@ dependencies = [
 
 [project.scripts]
 x-terminal = "x_terminal.cli:main"
+sl-ratings = "summer_league.cli:main"
 
 [tool.setuptools.packages.find]
-include = ["x_terminal*"]
+include = ["x_terminal*", "summer_league*"]
 
 [tool.setuptools.package-data]
 x_terminal = ["*.tcss"]

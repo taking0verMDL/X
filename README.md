@@ -1,3 +1,6 @@
+> This repo also contains a **Summer League power ratings model** — see
+> [`summer_league/README.md`](summer_league/README.md).
+
 # X Terminal
 
 A live terminal dashboard for your X (Twitter) feed. You define categories
