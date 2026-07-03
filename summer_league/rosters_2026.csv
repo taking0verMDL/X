@@ -79,13 +79,19 @@ Cleveland Cavaliers,Tre'von Spillers,F,undrafted_rookie,,,,,,,4.1
 Cleveland Cavaliers,Ernest Udeh Jr.,C,undrafted_rookie,,,,,,,4.5
 Cleveland Cavaliers,Xavian Lee,G,undrafted_rookie,,,,,,,
 Cleveland Cavaliers,Ian Martinez,G,undrafted_rookie,,,,,,,3.4
-Dallas Mavericks,Morez Johnson Jr.,C,lottery_rookie,,9,,,,,6.9
+Dallas Mavericks,Morez Johnson Jr.,F,lottery_rookie,,9,,,,,6.9
 Dallas Mavericks,Sergio De Larrea,G,first_round_rookie,,25,,,,,
-Dallas Mavericks,Ryan Nembhard,G,two_way,,,25,12,,,6.8
+Dallas Mavericks,Ryan Nembhard,G,two_way,23,,25,12,,,6.9
 Dallas Mavericks,Tobi Lawal,F,second_round_rookie,,48,,,,,3.7
 Dallas Mavericks,Vsevolod Ishchenko,C,second_round_rookie,,56,,,,,
-Dallas Mavericks,Moussa Cisse,C,gleague_vet,,,,,,out,5.8
-Dallas Mavericks,John Poulakidas,G,undrafted_rookie,,,,,,,4.2
+Dallas Mavericks,John Poulakidas,G,two_way,23,,,,,,6.2
+Dallas Mavericks,Jaden Springer,G,gleague_vet,23,28,150,10,,,
+Dallas Mavericks,Tyler Smith,F,gleague_vet,21,33,60,8,,,5.3
+Dallas Mavericks,Darin Green Jr.,G,gleague_vet,25,,,,,,
+Dallas Mavericks,Kaodirichi Akobundu-Ehiogu,C,gleague_vet,26,,,,,,
+Dallas Mavericks,Ja'Vier Francis,C,gleague_vet,22,,,,,,5.0
+Dallas Mavericks,Guillermo Diaz Graham,F,undrafted_rookie,23,,,,,,3.4
+Dallas Mavericks,Jorge Diaz Graham,F,undrafted_rookie,23,,,,,,3.6
 Denver Nuggets,Trevon Brazile,F,second_round_rookie,,35,,,,,5.3
 Denver Nuggets,Bryce Hopkins,F,second_round_rookie,,49,,,,,4.4
 Denver Nuggets,KJ Simpson,G,gleague_vet,,,40,10,,,5.2
