@@ -73,6 +73,26 @@ everything else refines the estimate.
 All constants live at the top of `summer_league/model.py` and are meant to
 be retuned as results come in.
 
+## Stats-derived values (`build_values.py`)
+
+`python -m summer_league.build_values` replaces tier defaults with values
+derived from each player's advanced stats, written into the roster CSV's
+`value` column (same 0–10 scale, anchored to the tier baselines):
+
+- **NBA returners** — 2025-26 NBA BPM (`data/nba_2026.csv`, from
+  basketball-reference), minutes-weighted, capped at 75% stat / 25%
+  pedigree. Anchor: BPM −2 with a full season ≈ 8.0.
+- **2026 rookies** — final college season BPM (`data/college_2026.csv`,
+  from barttorvik), age-adjusted (−0.5 BPM per year older than 19.5 at
+  draft), blended 50/50 with draft pedigree.
+- **2025 grads** now in the G-League — final college BPM at a steeper
+  discount, 60/40 stat/baseline.
+- **No stats found** (internationals, multi-year G-League vets) — the tier
+  baseline stands.
+
+Run with `--dry-run` to preview matches and the biggest movers without
+writing. ~75% of rostered players get a stat-derived value.
+
 ## Caveats
 
 - Ratings are only relative to the teams **in the file** — the league mean
