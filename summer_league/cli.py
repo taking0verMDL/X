@@ -24,7 +24,8 @@ def _print_table(ratings: list[TeamRating], detail: bool) -> None:
         if detail:
             for p in r.rotation:
                 pos = f" {p.pos}" if p.pos else ""
-                print(f"      {p.value:5.2f}  {p.name}{pos} [{p.tier}]")
+                override = " *set" if p.value_override is not None else ""
+                print(f"      {p.value:5.2f}  {p.name}{pos} [{p.tier}]{override}")
     print("\nRating = expected margin (points) vs. an average team on a neutral floor.")
 
 

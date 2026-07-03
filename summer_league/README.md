@@ -34,6 +34,7 @@ everything else refines the estimate.
 | `nba_mpg` | career NBA minutes per game |
 | `adj` | manual adjustment in player-value points (e.g. `0.5` if you're high on a guy, `-1` if he's hurt-ish) |
 | `out` | `1`/`yes`/`out` if the player is on the roster but not playing |
+| `value` | **direct override** of the player's value — replaces the tier/pick/experience formula entirely (any `adj` still adds on top). Use when pedigree misleads, e.g. a former top-10 pick who hasn't panned out. |
 
 ### Tiers
 

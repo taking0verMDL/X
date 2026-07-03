@@ -1,4 +1,4 @@
-team,player,pos,tier,age,draft_pick,nba_gp,nba_mpg,adj,out
+team,player,pos,tier,age,draft_pick,nba_gp,nba_mpg,adj,out,value
 Atlanta Hawks,Kingston Flemings,G,lottery_rookie,,8,,,,
 Atlanta Hawks,Asa Newell,F,nba_fringe,,23,,,,
 Atlanta Hawks,Zuby Ejiofor,C,first_round_rookie,,23,,,,
@@ -48,7 +48,7 @@ Charlotte Hornets,Hannes Steinbach,C,lottery_rookie,,14,,,,
 Charlotte Hornets,Christian Anderson,G,first_round_rookie,,18,,,,
 Charlotte Hornets,Sion James,G,nba_fringe,,33,,,,
 Charlotte Hornets,Liam McNeeley,F,nba_fringe,,29,,,0.5,
-Charlotte Hornets,Tidjane Salaun,F,nba_rotation,,6,,,,
+Charlotte Hornets,Tidjane Salaun,F,nba_rotation,,6,,,,,6.5
 Charlotte Hornets,Cameron Matthews,F,gleague_vet,,,,,,
 Charlotte Hornets,Michael Ajayi,F,gleague_vet,,,,,,
 Charlotte Hornets,Terrell Brown Jr.,G,gleague_vet,,,,,,
@@ -385,7 +385,7 @@ Toronto Raptors,Nate Bittle,C,undrafted_rookie,,,,,,
 Toronto Raptors,Malik Thomas,G,undrafted_rookie,,,,,,
 Utah Jazz,Ace Bailey,F,nba_rotation,,5,,,,
 Utah Jazz,Darryn Peterson,G,lottery_rookie,,2,,,,
-Utah Jazz,Cody Williams,F,nba_fringe,,10,100,16,,
+Utah Jazz,Cody Williams,F,nba_fringe,,10,100,16,,,7.5
 Utah Jazz,Kylor Kelley,C,gleague_vet,,,,,,
 Utah Jazz,Max Abmas,G,gleague_vet,,,,,,
 Utah Jazz,Bez Mbeng,G,gleague_vet,,,,,,

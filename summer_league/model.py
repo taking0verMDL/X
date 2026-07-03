@@ -102,6 +102,7 @@ class Player:
     nba_mpg: float | None = None
     adj: float = 0.0
     out: bool = False
+    value_override: float | None = None
 
     value: float = field(init=False, default=0.0)
 
@@ -114,6 +115,11 @@ class Player:
         self.value = self._compute_value()
 
     def _compute_value(self) -> float:
+        # A hand-set value trumps the pedigree formula (plus any adj on top):
+        # use it when pedigree misleads, e.g. a high pick who hasn't panned out.
+        if self.value_override is not None:
+            return self.value_override + self.adj
+
         v = TIER_VALUES[self.tier]
 
         # Draft-pick curve overrides the coarse rookie tier default.
@@ -219,7 +225,7 @@ def game_total(a: TeamRating, b: TeamRating) -> float:
 # --------------------------------------------------------------------------
 
 CSV_COLUMNS = ["team", "player", "pos", "tier", "age", "draft_pick",
-               "nba_gp", "nba_mpg", "adj", "out"]
+               "nba_gp", "nba_mpg", "adj", "out", "value"]
 
 
 def _num(row: dict, key: str) -> float | None:
@@ -250,6 +256,7 @@ def load_rosters(path: str | Path) -> list[Player]:
                     adj=_num(row, "adj") or 0.0,
                     out=(row.get("out") or "").strip().lower()
                         in ("1", "true", "yes", "out"),
+                    value_override=_num(row, "value"),
                 ))
             except ValueError as e:
                 raise ValueError(f"{path}, line {i}: {e}") from e
