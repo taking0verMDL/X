@@ -21,7 +21,6 @@ Boston Celtics,Hugo Gonzalez,F,nba_fringe,,28,,,,,7.9
 Boston Celtics,Chris Cenac Jr.,C,first_round_rookie,,27,,,,,5.3
 Boston Celtics,Dillon Mitchell,F,second_round_rookie,,40,,,,,5.5
 Boston Celtics,Amari Williams,C,two_way,,46,,,,,5.8
-Boston Celtics,Max Shulga,G,two_way,,57,,,,,5.4
 Boston Celtics,John Tonje,G,gleague_vet,,,20,10,,,4.7
 Boston Celtics,Kyle Mangas,G,gleague_vet,,,,,,,
 Boston Celtics,Tucker DeVries,F,gleague_vet,,,,,,,4.6
@@ -123,28 +122,31 @@ Detroit Pistons,Dawson Garcia,F,undrafted_rookie,,,,,,,3.5
 Detroit Pistons,Basheer Jihad,F,undrafted_rookie,,,,,,,3.3
 Detroit Pistons,Bryce Williams,G,undrafted_rookie,,,,,,,
 Detroit Pistons,Latavious Mitchell,F,undrafted_rookie,,,,,,,
-Golden State Warriors,Will Richard,G,nba_rotation,,56,,,,,8.2
-Golden State Warriors,Yaxel Lendeborg,F,lottery_rookie,,11,,,,,7.3
-Golden State Warriors,LJ Cryer,G,two_way,,,,,,,5.9
-Golden State Warriors,Colby Jones,G,gleague_vet,,,80,9,,,
-Golden State Warriors,Lajae Jones,F,second_round_rookie,,54,,,,,4.4
-Golden State Warriors,Chance McMillian,G,gleague_vet,,,,,,,4.6
-Golden State Warriors,Malevy Leons,F,gleague_vet,,,,,,,4.9
-Golden State Warriors,Lachlan Olbrich,C,gleague_vet,,,,,,,5.1
-Golden State Warriors,RJ Nembhard,G,gleague_vet,,,,,,,
-Golden State Warriors,Deivon Smith,G,gleague_vet,,,,,,,3.9
-Golden State Warriors,Jack Clark,F,gleague_vet,,,,,,,4.1
-Golden State Warriors,Reese Dixon-Waters,G,gleague_vet,,,,,,,
-Golden State Warriors,Graham Ike,C,undrafted_rookie,,,,,0.5,,4.3
-Golden State Warriors,Nick Boyd,G,undrafted_rookie,24,,,,,,4.1
-Golden State Warriors,CJ Gunn,F,undrafted_rookie,,,,,,,3.2
-Golden State Warriors,Chase Hunter,G,gleague_vet,,,,,,,4.1
-Golden State Warriors,Wade Taylor,G,gleague_vet,,,,,,,4.2
-Golden State Warriors,Jacksen Moni,F,undrafted_rookie,,,,,,,3.6
-Golden State Warriors,David Green,G,undrafted_rookie,,,,,,,3.3
-Golden State Warriors,Steve Settle,F,undrafted_rookie,,,,,,,3.3
-Golden State Warriors,Cam Tyson,G,undrafted_rookie,,,,,,,
-Golden State Warriors,KJ Adams,F,camp,,,,,,,3.8
+Warriors Gold,Will Richard,G,nba_rotation,,56,,,,,8.2
+Warriors Gold,Yaxel Lendeborg,F,lottery_rookie,,11,,,,,7.3
+Warriors Gold,LJ Cryer,G,two_way,24,,,,,,6.1
+Warriors Gold,Max Shulga,G,two_way,24,57,,,,,5.5
+Warriors Gold,Graham Ike,C,undrafted_rookie,23,,,,,,4.3
+Warriors Gold,Lajae Jones,F,second_round_rookie,,54,,,,,4.4
+Warriors Gold,Malevy Leons,F,gleague_vet,26,,,,,,5.3
+Warriors Gold,Chance McMillian,G,gleague_vet,25,,,,,,4.7
+Warriors Gold,Lachlan Olbrich,C,gleague_vet,22,,,,,,5.2
+Warriors Gold,Chase Hunter,G,gleague_vet,25,,,,,,4.3
+Warriors Gold,Deivon Smith,G,gleague_vet,24,,,,,,4.1
+Warriors Gold,Jack Clark,F,gleague_vet,26,,,,,,4.3
+Warriors Gold,Alex Toohey,F,international,22,52,,,,,
+Warriors Gold,KJ Adams,F,camp,24,,,,,,3.9
+Warriors Blue,Colby Jones,G,gleague_vet,24,,80,9,,,
+Warriors Blue,Nick Boyd,G,undrafted_rookie,25,,,,,,4.1
+Warriors Blue,Reese Dixon-Waters,G,gleague_vet,24,,,,,,
+Warriors Blue,Andersson Garcia,F,gleague_vet,25,,,,,,4.7
+Warriors Blue,David Green,F,undrafted_rookie,24,,,,,,3.3
+Warriors Blue,Jacksen Moni,F,undrafted_rookie,23,,,,,,3.6
+Warriors Blue,RJ Nembhard,G,gleague_vet,27,,,,,,
+Warriors Blue,Steve Settle,F,gleague_vet,25,,,,,,3.8
+Warriors Blue,Wade Taylor,G,gleague_vet,23,,,,,,4.3
+Warriors Blue,Cameron Tyson,G,gleague_vet,26,,,,,,
+Warriors Blue,Hason Ward,C,gleague_vet,25,,,,,,
 Houston Rockets,Bruce Thornton,G,second_round_rookie,,31,,,,,5.8
 Houston Rockets,Daishen Nix,G,gleague_vet,24,,80,10,,,
 Houston Rockets,Tristen Newton,G,gleague_vet,,,20,8,,,
