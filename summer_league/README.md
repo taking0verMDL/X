@@ -102,3 +102,14 @@ writing. ~75% of rostered players get a stat-derived value.
   `out` flag and re-run rather than editing rosters destructively.
 - `example_rosters.csv` uses fictional players purely to demonstrate the
   schema and output.
+
+## Updating from box scores (`update_games.py`)
+
+Append player lines to `data/boxscores_2026.csv` and final scores to
+`data/games_2026.csv`, then run `python -m summer_league.update_games`.
+Each player's value takes a Bayesian nudge toward what the box score
+implies (Hollinger Game Score per 36, mapped to the value scale), scaled
+by minutes — a monster game moves a player ~0.5–1.0 points; it takes
+several games to fully re-rate someone. The game log prints predicted vs.
+actual spreads/totals and a shrunk `BASE_TOTAL` suggestion to adopt in
+`model.py` as the sample grows.
