@@ -113,3 +113,8 @@ by minutes — a monster game moves a player ~0.5–1.0 points; it takes
 several games to fully re-rate someone. The game log prints predicted vs.
 actual spreads/totals and a shrunk `BASE_TOTAL` suggestion to adopt in
 `model.py` as the sample grows.
+
+**Pipeline order matters:** `build_values` rewrites the stat baselines and
+wipes any box-score nudges. After rerunning it (e.g. for a roster change),
+clear the `applied` column in `data/boxscores_2026.csv` and rerun
+`update_games` to replay all games on the fresh baselines.

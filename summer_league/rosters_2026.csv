@@ -3,7 +3,7 @@ Atlanta Hawks,Kingston Flemings,G,lottery_rookie,,8,,,,,6.8
 Atlanta Hawks,Asa Newell,F,nba_fringe,,23,,,,,7.4
 Atlanta Hawks,Zuby Ejiofor,C,first_round_rookie,,23,,,,,6.6
 Atlanta Hawks,Henri Veesaar,C,second_round_rookie,,52,,,,,5.2
-Atlanta Hawks,Jacob Toppin,F,gleague_vet,,,25,8,,,4.9
+Atlanta Hawks,Jacob Toppin,F,gleague_vet,,,25,8,,,5.2
 Atlanta Hawks,Keshon Gilbert,G,gleague_vet,,,,,,,4.5
 Atlanta Hawks,Kobe Johnson,G,gleague_vet,,,,,,,4.8
 Atlanta Hawks,RayJ Dennis,G,gleague_vet,,,,,,,4.8
@@ -41,7 +41,7 @@ Brooklyn Nets,Duke Brennan,C,undrafted_rookie,,,,,,,4.1
 Brooklyn Nets,Dion Brown,G,undrafted_rookie,,,,,,,3.6
 Brooklyn Nets,Aaron Scott,F,undrafted_rookie,,,,,,,4.1
 Brooklyn Nets,Ben Humrichous,F,undrafted_rookie,,,,,,,4.8
-Brooklyn Nets,John Ukomadu,F,undrafted_rookie,,,,,,,2.7
+Brooklyn Nets,John Ukomadu,F,undrafted_rookie,,,,,,,2.5
 Brooklyn Nets,Dain Dainja,C,gleague_vet,23,,,,,,4.5
 Charlotte Hornets,Ryan Kalkbrenner,C,nba_rotation,,34,,,,,9.4
 Charlotte Hornets,Hannes Steinbach,C,lottery_rookie,,14,,,,,6.1
@@ -137,17 +137,17 @@ Warriors Gold,Deivon Smith,G,gleague_vet,24,,,,,,3.7
 Warriors Gold,Jack Clark,F,gleague_vet,26,,,,,,4.3
 Warriors Gold,Alex Toohey,F,international,22,52,,,,,
 Warriors Gold,KJ Adams,F,camp,24,,,,,,3.9
-Warriors Blue,Colby Jones,G,gleague_vet,24,,80,9,,,5.7
+Warriors Blue,Colby Jones,G,gleague_vet,24,,80,9,,,5.9
 Warriors Blue,Nick Boyd,G,undrafted_rookie,25,,,,,,4.8
-Warriors Blue,Reese Dixon-Waters,G,gleague_vet,24,,,,,,4.2
+Warriors Blue,Reese Dixon-Waters,G,gleague_vet,24,,,,,,4.1
 Warriors Blue,Andersson Garcia,F,gleague_vet,25,,,,,,4.4
 Warriors Blue,David Green,F,undrafted_rookie,24,,,,,,3.3
 Warriors Blue,Jacksen Moni,F,undrafted_rookie,23,,,,,,4.3
-Warriors Blue,RJ Nembhard,G,gleague_vet,27,,,,,,4.7
+Warriors Blue,RJ Nembhard,G,gleague_vet,27,,,,,,4.9
 Warriors Blue,Steve Settle,F,gleague_vet,25,,,,,,3.7
 Warriors Blue,Wade Taylor,G,gleague_vet,23,,,,,,4.1
-Warriors Blue,Cameron Tyson,G,gleague_vet,26,,,,,,4.4
-Warriors Blue,Hason Ward,C,gleague_vet,25,,,,,,4.7
+Warriors Blue,Cameron Tyson,G,gleague_vet,26,,,,,,4.3
+Warriors Blue,Hason Ward,C,gleague_vet,25,,,,,,4.9
 Houston Rockets,Bruce Thornton,G,second_round_rookie,,31,,,,,5.8
 Houston Rockets,Daishen Nix,G,gleague_vet,24,,80,10,,,
 Houston Rockets,Tristen Newton,G,gleague_vet,,,20,8,,,
@@ -176,14 +176,15 @@ Indiana Pacers,Jalen Warley,G,undrafted_rookie,,,,,,,4.5
 Indiana Pacers,MJ Iraldi,G,undrafted_rookie,,,,,,,
 Indiana Pacers,Keba Keita,C,undrafted_rookie,,,,,,,4.5
 LA Clippers,Keaton Wagler,G,lottery_rookie,,5,,,,,7.3
-LA Clippers,Yanic Konan Niederhauser,C,nba_fringe,,30,,,,,7.4
+LA Clippers,Cam Christie,G,nba_fringe,21,46,,,,,6.9
 LA Clippers,Kobe Sanders,G,two_way,,50,,,,,7.1
 LA Clippers,Baba Miller,F,second_round_rookie,,36,,,,,5.5
 LA Clippers,Nick Martinelli,F,second_round_rookie,,55,,,,,4.5
-LA Clippers,Narcisse Ngoy,C,second_round_rookie,,57,,,,,
 LA Clippers,Norchad Omier,F,gleague_vet,,,,,,,4.7
+LA Clippers,Zach Freemantle,F,gleague_vet,25,,,,,,4.2
+LA Clippers,Jahmyl Telfort,F,gleague_vet,25,,,,,,3.8
 LA Clippers,Riley Kugel,G,gleague_vet,,,,,,,3.8
-LA Clippers,Sean Pedulla,G,undrafted_rookie,,,,,,,4.1
+LA Clippers,Sean Pedulla,G,gleague_vet,23,,,,,,4.6
 LA Clippers,Fletcher Loyer,G,undrafted_rookie,,,,,,,4.3
 LA Clippers,Themus Fulks,G,undrafted_rookie,,,,,,,2.7
 Los Angeles Lakers,Cameron Carr,G,first_round_rookie,,24,,,,,5.8
@@ -191,12 +192,12 @@ Los Angeles Lakers,Adou Thiero,F,nba_fringe,,36,,,,,6.7
 Los Angeles Lakers,Chris Manon,G,two_way,,,,,,,6.7
 Los Angeles Lakers,AK Okereke,F,two_way,,,,,-1.0,,5.4
 Los Angeles Lakers,Peter Suder,G,two_way,,,,,-1.0,,4.1
-Los Angeles Lakers,Anton Watson,F,gleague_vet,,,,,,,4.3
+Los Angeles Lakers,Anton Watson,F,gleague_vet,,,,,,,4.6
 Los Angeles Lakers,Arthur Kaluma,F,gleague_vet,,,,,,,4.5
 Los Angeles Lakers,Luke Goode,F,gleague_vet,,,,,,,3.9
-Los Angeles Lakers,Jon Elmore,G,gleague_vet,29,,,,,,4.4
-Los Angeles Lakers,Zhaire Smith,G,gleague_vet,27,,13,,,,4.8
-Los Angeles Lakers,William Hickey,G,camp,,,,,,,2.1
+Los Angeles Lakers,Jon Elmore,G,gleague_vet,29,,,,,,4.3
+Los Angeles Lakers,Zhaire Smith,G,gleague_vet,27,,13,,,,5.0
+Los Angeles Lakers,William Hickey,G,camp,,,,,,,2.2
 Los Angeles Lakers,William Kyle III,C,undrafted_rookie,,,,,,,4.6
 Los Angeles Lakers,Chase Ross,G,undrafted_rookie,,,,,,,3.5
 Los Angeles Lakers,Robert McCray V,G,undrafted_rookie,,,,,,,3.7
@@ -219,9 +220,9 @@ Memphis Grizzlies,Brendan Hausen,G,undrafted_rookie,,,,,,,3.0
 Miami Heat,Ryan Conwell,G,second_round_rookie,,37,,,,,4.6
 Miami Heat,Vladislav Goldin,C,two_way,,,,,,,4.3
 Miami Heat,Myron Gardner,F,two_way,,,,,,,6.9
-Miami Heat,Trevor Keels,G,gleague_vet,,,,,,,4.4
-Miami Heat,Jahmir Young,G,gleague_vet,,,,,,,4.2
-Miami Heat,Kendall Brown,G,gleague_vet,,,,,,,3.8
+Miami Heat,Trevor Keels,G,gleague_vet,,,,,,,4.7
+Miami Heat,Jahmir Young,G,gleague_vet,,,,,,,4.4
+Miami Heat,Kendall Brown,G,gleague_vet,,,,,,,3.6
 Miami Heat,Ezra Ausar,F,undrafted_rookie,,,,,,,3.4
 Miami Heat,Cam Carter,G,undrafted_rookie,,,,,,,3.2
 Miami Heat,Tre Donaldson,G,undrafted_rookie,,,,,,,4.6
@@ -235,14 +236,14 @@ Miami Heat,Tre White,F,undrafted_rookie,,,,,,,4.5
 Milwaukee Bucks,Nate Ament,F,lottery_rookie,,13,,,,,5.7
 Milwaukee Bucks,Brayden Burries,G,lottery_rookie,,10,,,,,6.5
 Milwaukee Bucks,Kasparas Jakucionis,G,nba_fringe,,20,,,0.5,,8.3
-Milwaukee Bucks,Brandon Boston,G,gleague_vet,24,,200,15,,,6.5
-Milwaukee Bucks,Kira Lewis Jr.,G,gleague_vet,25,,150,12,,,6.5
-Milwaukee Bucks,Malique Lewis,F,second_round_rookie,,60,,,,,3.9
-Milwaukee Bucks,Bogoljub Markovic,F,international,,47,,,,,4.1
+Milwaukee Bucks,Brandon Boston,G,gleague_vet,24,,200,15,,,7.1
+Milwaukee Bucks,Kira Lewis Jr.,G,gleague_vet,25,,150,12,,,7.0
+Milwaukee Bucks,Malique Lewis,F,second_round_rookie,,60,,,,,4.0
+Milwaukee Bucks,Bogoljub Markovic,F,international,,47,,,,,4.5
 Milwaukee Bucks,Cormac Ryan,G,gleague_vet,,,,,,,5.2
 Milwaukee Bucks,Pete Nance,F,gleague_vet,,,,,,,6.7
-Milwaukee Bucks,Jesse Edwards,C,gleague_vet,,,,,,,4.4
-Milwaukee Bucks,John Butler,C,gleague_vet,,,,,,,4.1
+Milwaukee Bucks,Jesse Edwards,C,gleague_vet,,,,,,,4.8
+Milwaukee Bucks,John Butler,C,gleague_vet,,,,,,,4.2
 Milwaukee Bucks,Zack Austin,F,gleague_vet,,,,,,,4.2
 Milwaukee Bucks,Kuany Kuany,F,gleague_vet,,,,,,,
 Milwaukee Bucks,Earl Timberlake,F,gleague_vet,,,,,,,3.5
@@ -354,7 +355,7 @@ Sacramento Kings,Maxime Raynaud,C,nba_fringe,,42,,,,,7.6
 Sacramento Kings,Jonathan Mogbo,F,nba_fringe,,31,60,15,,,7.7
 Sacramento Kings,Emanuel Sharp,G,second_round_rookie,,45,,,,,5.2
 Sacramento Kings,Dylan Cardwell,C,gleague_vet,,,,,,,6.7
-Sacramento Kings,Jamarion Sharp,C,gleague_vet,,,,,,,4.4
+Sacramento Kings,Jamarion Sharp,C,gleague_vet,,,,,,,4.7
 Sacramento Kings,Adam Flagler,G,gleague_vet,,,15,,,,4.2
 Sacramento Kings,Viktor Lakhin,C,gleague_vet,,,,,,,5.5
 Sacramento Kings,Isaiah Stevens,G,gleague_vet,,,,,,,
@@ -369,7 +370,7 @@ San Antonio Spurs,Jayden Quaintance,F,first_round_rookie,,20,,,,out,5.7
 San Antonio Spurs,Tarris Reed Jr.,C,second_round_rookie,,26,,,,,6.0
 San Antonio Spurs,Ja'Kobi Gillespie,G,second_round_rookie,,42,,,,,5.2
 San Antonio Spurs,Maliq Brown,F,second_round_rookie,,44,,,,,6.3
-San Antonio Spurs,Emanuel Miller,F,two_way,,,,,,,5.0
+San Antonio Spurs,Emanuel Miller,F,two_way,,,,,,,4.6
 San Antonio Spurs,RJ Davis,G,gleague_vet,,,,,,,4.9
 San Antonio Spurs,David Muoka,C,gleague_vet,,,,,,,
 San Antonio Spurs,Igor Milicic Jr.,F,gleague_vet,,,,,,,4.8
@@ -400,7 +401,7 @@ Utah Jazz,Ace Bailey,F,nba_rotation,,5,,,,,7.2
 Utah Jazz,Darryn Peterson,G,lottery_rookie,,2,,,,,7.2
 Utah Jazz,Cody Williams,F,nba_fringe,,10,100,16,,,6.5
 Utah Jazz,Kylor Kelley,C,gleague_vet,,,,,,,4.0
-Utah Jazz,Max Abmas,G,gleague_vet,,,,,,,4.5
+Utah Jazz,Max Abmas,G,gleague_vet,,,,,,,4.9
 Utah Jazz,Bez Mbeng,G,gleague_vet,,,,,,,5.2
 Utah Jazz,Matthew Cleveland,F,gleague_vet,,,,,,,3.4
 Utah Jazz,Blake Hinson,F,gleague_vet,,,,,,,5.0
@@ -410,7 +411,7 @@ Utah Jazz,Jonas Aidoo,C,gleague_vet,,,,,,,4.4
 Utah Jazz,Mohamed Wague,C,gleague_vet,,,,,,,5.0
 Utah Jazz,Micah Handlogten,C,undrafted_rookie,,,,,,,5.3
 Utah Jazz,Hayden Gray,G,undrafted_rookie,,,,,,,4.3
-Utah Jazz,Justin Harmon,G,undrafted_rookie,,,,,,,3.8
+Utah Jazz,Justin Harmon,G,undrafted_rookie,,,,,,,4.5
 Utah Jazz,Jaxon Kohler,F,undrafted_rookie,,,,,,,4.7
 Washington Wizards,AJ Dybantsa,F,lottery_rookie,,1,,,,,7.2
 Washington Wizards,Tre Johnson,G,nba_rotation,,6,,,,,7.1
