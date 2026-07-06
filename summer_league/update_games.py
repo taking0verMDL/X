@@ -64,12 +64,16 @@ def update_players() -> int:
     index = {(r["team"], r["player"]): r for r in rows}
     players = {(p.team, p.name): p for p in load_rosters(ROSTERS)}
 
+    box_rows = list(csv.DictReader(open(BOX, encoding="utf-8")))
     n = 0
-    for b in csv.DictReader(open(BOX, encoding="utf-8")):
+    for b in box_rows:
+        if b.get("applied") == "1":       # already folded into values
+            continue
         key = (b["team"], b["player"])
         if key not in index:
             print(f"  ! no roster match: {key} — fix the name and rerun")
             continue
+        b["applied"] = "1"
         mins = float(b["min"] or 0)
         if mins < MIN_MINUTES:
             continue
@@ -84,6 +88,12 @@ def update_players() -> int:
         w = csv.DictWriter(f, fieldnames=cols)
         w.writeheader()
         w.writerows(rows)
+    # mark applied lines so reruns are idempotent
+    box_cols = [c for c in box_rows[0].keys() if c != "applied"] + ["applied"]
+    with open(BOX, "w", newline="", encoding="utf-8") as f:
+        w = csv.DictWriter(f, fieldnames=box_cols)
+        w.writeheader()
+        w.writerows(box_rows)
     return n
 
 

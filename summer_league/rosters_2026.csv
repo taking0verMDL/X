@@ -1,20 +1,20 @@
 team,player,pos,tier,age,draft_pick,nba_gp,nba_mpg,adj,out,value
 Atlanta Hawks,Kingston Flemings,G,lottery_rookie,,8,,,,,6.8
-Atlanta Hawks,Asa Newell,F,nba_fringe,,23,,,,,7.6
-Atlanta Hawks,Zuby Ejiofor,C,first_round_rookie,,23,,,,,6.8
-Atlanta Hawks,Henri Veesaar,C,second_round_rookie,,52,,,,,5.3
-Atlanta Hawks,Jacob Toppin,F,gleague_vet,,,25,8,,,
-Atlanta Hawks,Keshon Gilbert,G,gleague_vet,,,,,,,3.9
-Atlanta Hawks,Kobe Johnson,G,gleague_vet,,,,,,,5.0
-Atlanta Hawks,RayJ Dennis,G,gleague_vet,,,,,,,4.4
+Atlanta Hawks,Asa Newell,F,nba_fringe,,23,,,,,7.4
+Atlanta Hawks,Zuby Ejiofor,C,first_round_rookie,,23,,,,,6.6
+Atlanta Hawks,Henri Veesaar,C,second_round_rookie,,52,,,,,5.2
+Atlanta Hawks,Jacob Toppin,F,gleague_vet,,,25,8,,,4.9
+Atlanta Hawks,Keshon Gilbert,G,gleague_vet,,,,,,,4.5
+Atlanta Hawks,Kobe Johnson,G,gleague_vet,,,,,,,4.8
+Atlanta Hawks,RayJ Dennis,G,gleague_vet,,,,,,,4.8
 Atlanta Hawks,Zeke Mayo,G,gleague_vet,,,,,,,4.0
 Atlanta Hawks,Isaiah Wong,G,gleague_vet,,,,,,,
 Atlanta Hawks,Eli Ndiaye,F,international,,,,,,,
-Atlanta Hawks,Isaac McKneely,G,undrafted_rookie,,,,,,,3.8
+Atlanta Hawks,Isaac McKneely,G,undrafted_rookie,,,,,,,3.9
 Atlanta Hawks,Kobe Knox,G,undrafted_rookie,,,,,,,3.3
 Atlanta Hawks,Devon Higgs,G,undrafted_rookie,,,,,,,
 Atlanta Hawks,Cameron Corhen,C,undrafted_rookie,,,,,,,3.4
-Atlanta Hawks,Gabe Madsen,G,undrafted_rookie,,,,,,,2.8
+Atlanta Hawks,Gabe Madsen,G,undrafted_rookie,,,,,,,3.3
 Atlanta Hawks,Nick Pringle,C,gleague_vet,,,,,,,3.5
 Atlanta Hawks,Day Day Thomas,G,undrafted_rookie,,,,,,,3.8
 Boston Celtics,Hugo Gonzalez,F,nba_fringe,,28,,,,,7.9
@@ -202,18 +202,18 @@ Los Angeles Lakers,Chase Ross,G,undrafted_rookie,,,,,,,3.5
 Los Angeles Lakers,Robert McCray V,G,undrafted_rookie,,,,,,,3.7
 Los Angeles Lakers,Robbie Avila,C,undrafted_rookie,,,,,,,4.1
 Los Angeles Lakers,Jacari White,G,undrafted_rookie,,,,,,,3.7
-Memphis Grizzlies,Cedric Coward,F,nba_rotation,,11,,,,,8.7
-Memphis Grizzlies,Cam Boozer,F,lottery_rookie,,3,,,,,8.4
-Memphis Grizzlies,Taylor Hendricks,F,nba_fringe,22,9,,,,,7.6
-Memphis Grizzlies,Olivier-Maxence Prosper,F,nba_fringe,23,24,,,,,8.4
+Memphis Grizzlies,Cedric Coward,F,nba_rotation,,11,,,,,7.8
+Memphis Grizzlies,Cameron Boozer,F,lottery_rookie,,3,,,,,8.3
+Memphis Grizzlies,Taylor Hendricks,F,nba_fringe,22,9,,,,,7.9
+Memphis Grizzlies,Olivier-Maxence Prosper,F,nba_fringe,23,24,,,,,8.5
 Memphis Grizzlies,Karim Lopez,F,first_round_rookie,,21,,,,,
-Memphis Grizzlies,Javon Small,G,two_way,,48,30,,,,8.5
-Memphis Grizzlies,Jahmai Mashack,G,two_way,,59,,,,,5.7
-Memphis Grizzlies,Tyler Burton,F,gleague_vet,25,,,,,,5.0
+Memphis Grizzlies,Javon Small,G,two_way,,48,30,,,,8.6
+Memphis Grizzlies,Jahmai Mashack,G,two_way,,59,,,,,6.1
+Memphis Grizzlies,Tyler Burton,F,gleague_vet,25,,,,,,4.9
 Memphis Grizzlies,Lawson Lovering,C,gleague_vet,24,,,,,,3.9
 Memphis Grizzlies,Jevon Porter,F,undrafted_rookie,22,,,,,,3.6
-Memphis Grizzlies,Carson Cooper,C,undrafted_rookie,,,,,,,4.6
-Memphis Grizzlies,Zach Cleveland,F,undrafted_rookie,,,,,,,3.6
+Memphis Grizzlies,Carson Cooper,C,undrafted_rookie,,,,,,,5.3
+Memphis Grizzlies,Zach Cleveland,F,undrafted_rookie,,,,,,,3.7
 Memphis Grizzlies,Jestin Porter,G,undrafted_rookie,,,,,,,3.5
 Memphis Grizzlies,Brendan Hausen,G,undrafted_rookie,,,,,,,3.0
 Miami Heat,Ryan Conwell,G,second_round_rookie,,37,,,,,4.6
@@ -286,24 +286,24 @@ New York Knicks,Will Johnston,G,undrafted_rookie,,,,,,,2.5
 New York Knicks,Akoi Yuot,F,undrafted_rookie,,,,,,,
 New York Knicks,Keith Palek III,G,undrafted_rookie,,,,,,,2.6
 New York Knicks,Oziyah Sellers,G,undrafted_rookie,,,,,,,3.6
-Oklahoma City Thunder,Aday Mara,C,lottery_rookie,,12,,,,,7.3
-Oklahoma City Thunder,Bennett Stirtz,G,first_round_rookie,,16,,,,,5.5
-Oklahoma City Thunder,Brooks Barnhizer,G,two_way,,44,,,,,6.2
+Oklahoma City Thunder,Aday Mara,C,lottery_rookie,,12,,,,,7.2
+Oklahoma City Thunder,Bennett Stirtz,G,first_round_rookie,,16,,,,,5.8
+Oklahoma City Thunder,Brooks Barnhizer,G,two_way,,44,,,,,6.3
 Oklahoma City Thunder,Otega Oweh,G,second_round_rookie,,41,,,,,4.4
-Oklahoma City Thunder,Payton Sandfort,F,gleague_vet,,,,,,,3.7
-Oklahoma City Thunder,Josh Dix,G,undrafted_rookie,,,,,,,3.5
+Oklahoma City Thunder,Payton Sandfort,F,gleague_vet,,,,,,,3.9
+Oklahoma City Thunder,Josh Dix,G,undrafted_rookie,,,,,,,3.3
 Oklahoma City Thunder,Elijah Mahi,F,undrafted_rookie,,,,,,,3.7
 Oklahoma City Thunder,Sam Alexis,F,undrafted_rookie,,,,,,,4.8
-Oklahoma City Thunder,Nate Johnson,G,undrafted_rookie,,,,,,,3.9
-Oklahoma City Thunder,Christoph Tilly,C,undrafted_rookie,,,,,,,3.9
-Oklahoma City Thunder,Lamar Wilkerson,G,undrafted_rookie,,,,,,,3.9
+Oklahoma City Thunder,Nate Johnson,G,undrafted_rookie,,,,,,,3.6
+Oklahoma City Thunder,Christoph Tilly,C,undrafted_rookie,,,,,,,4.1
+Oklahoma City Thunder,Lamar Wilkerson,G,undrafted_rookie,,,,,,,4.0
 Oklahoma City Thunder,Bryce Harris,F,undrafted_rookie,,,,,,,3.3
 Oklahoma City Thunder,Buddy Boeheim,F,gleague_vet,,,10,,,,
 Oklahoma City Thunder,Jabri Abdur-Rahim,F,gleague_vet,,,,,,,3.6
-Oklahoma City Thunder,Steven Ashworth,G,undrafted_rookie,,,,,,,3.4
+Oklahoma City Thunder,Steven Ashworth,G,undrafted_rookie,,,,,,,3.2
 Oklahoma City Thunder,Bryce Thompson,G,undrafted_rookie,,,,,,,2.6
 Oklahoma City Thunder,Andrew Holifield,F,undrafted_rookie,,,,,,,3.1
-Oklahoma City Thunder,Anthony Pritchard,G,undrafted_rookie,,,,,,,2.4
+Oklahoma City Thunder,Anthony Pritchard,G,undrafted_rookie,,,,,,,2.6
 Orlando Magic,Jase Richardson,G,nba_fringe,,25,,,0.5,,7.4
 Orlando Magic,Noah Penda,F,nba_fringe,,32,,,,,7.9
 Orlando Magic,Cam Reddish,F,gleague_vet,26,,250,22,0.5,,
@@ -396,21 +396,21 @@ Toronto Raptors,Jalen Celestine,G,undrafted_rookie,,,,,,,4.1
 Toronto Raptors,Brandon Angel,F,undrafted_rookie,,,,,,,3.3
 Toronto Raptors,Nate Bittle,C,undrafted_rookie,,,,,,,4.4
 Toronto Raptors,Malik Thomas,G,undrafted_rookie,,,,,,,3.0
-Utah Jazz,Ace Bailey,F,nba_rotation,,5,,,,,7.3
-Utah Jazz,Darryn Peterson,G,lottery_rookie,,2,,,,,7.1
-Utah Jazz,Cody Williams,F,nba_fringe,,10,100,16,,,6.9
-Utah Jazz,Kylor Kelley,C,gleague_vet,,,,,,,
-Utah Jazz,Max Abmas,G,gleague_vet,,,,,,,
+Utah Jazz,Ace Bailey,F,nba_rotation,,5,,,,,7.2
+Utah Jazz,Darryn Peterson,G,lottery_rookie,,2,,,,,7.2
+Utah Jazz,Cody Williams,F,nba_fringe,,10,100,16,,,6.5
+Utah Jazz,Kylor Kelley,C,gleague_vet,,,,,,,4.0
+Utah Jazz,Max Abmas,G,gleague_vet,,,,,,,4.5
 Utah Jazz,Bez Mbeng,G,gleague_vet,,,,,,,5.2
-Utah Jazz,Matthew Cleveland,F,gleague_vet,,,,,,,3.3
-Utah Jazz,Blake Hinson,F,gleague_vet,,,,,,,5.2
+Utah Jazz,Matthew Cleveland,F,gleague_vet,,,,,,,3.4
+Utah Jazz,Blake Hinson,F,gleague_vet,,,,,,,5.0
 Utah Jazz,Tamar Bates,G,gleague_vet,,,,,,,4.3
 Utah Jazz,Eric Dixon,F,gleague_vet,,,,,,,3.7
-Utah Jazz,Jonas Aidoo,C,gleague_vet,,,,,,,4.3
+Utah Jazz,Jonas Aidoo,C,gleague_vet,,,,,,,4.4
 Utah Jazz,Mohamed Wague,C,gleague_vet,,,,,,,5.0
 Utah Jazz,Micah Handlogten,C,undrafted_rookie,,,,,,,5.3
-Utah Jazz,Hayden Gray,G,undrafted_rookie,,,,,,,4.2
-Utah Jazz,Justin Harmon,G,undrafted_rookie,,,,,,,
+Utah Jazz,Hayden Gray,G,undrafted_rookie,,,,,,,4.3
+Utah Jazz,Justin Harmon,G,undrafted_rookie,,,,,,,3.8
 Utah Jazz,Jaxon Kohler,F,undrafted_rookie,,,,,,,4.7
 Washington Wizards,AJ Dybantsa,F,lottery_rookie,,1,,,,,7.2
 Washington Wizards,Tre Johnson,G,nba_rotation,,6,,,,,7.1
