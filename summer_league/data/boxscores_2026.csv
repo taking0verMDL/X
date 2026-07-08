@@ -53,16 +53,16 @@ date,team,player,min,pts,fgm,fga,tpm,tpa,ftm,fta,oreb,reb,ast,stl,blk,tov,pf,app
 2026-07-04,Milwaukee Bucks,Zack Austin,14,6,2,6,0,2,1,2,1,3,2,1,2,2,0,1
 2026-07-04,Milwaukee Bucks,Jesse Edwards,9,9,3,4,1,1,1,1,2,3,0,0,2,2,0,1
 2026-07-04,Golden State Warriors,Jacksen Moni,18,6,2,6,2,5,0,1,1,6,0,1,1,1,1,1
-2026-07-04,Golden State Warriors,David Green,15,10,4,6,2,4,0,0,0,0,0,0,1,0,0,1
+2026-07-04,Golden State Warriors,David Green,15,10,4,6,2,4,0,0,0,0,0,0,1,0,0,
 2026-07-04,Golden State Warriors,Nick Boyd,23,11,2,10,1,5,3,4,0,1,3,2,0,2,4,1
 2026-07-04,Golden State Warriors,Colby Jones,23,6,3,5,0,2,0,0,1,6,3,2,0,3,4,1
-2026-07-04,Golden State Warriors,RJ Nembhard,22,15,4,11,1,4,3,3,1,2,3,0,0,2,1,1
-2026-07-04,Golden State Warriors,Steve Settle,16,7,3,5,1,3,0,1,0,2,1,0,0,0,2,1
-2026-07-04,Golden State Warriors,Reese Dixon-Waters,17,9,4,9,1,4,0,0,1,4,0,0,0,1,0,1
-2026-07-04,Golden State Warriors,Andersson Garcia,17,7,1,2,1,2,2,2,2,3,1,1,0,1,2,1
-2026-07-04,Golden State Warriors,Wade Taylor,17,3,1,9,1,5,0,0,1,1,2,3,1,2,2,1
-2026-07-04,Golden State Warriors,Hason Ward,15,8,4,7,0,0,0,0,1,3,0,0,1,3,4,1
-2026-07-04,Golden State Warriors,Cameron Tyson,18,1,0,6,0,4,1,1,0,3,2,1,0,1,1,1
+2026-07-04,Golden State Warriors,RJ Nembhard,22,15,4,11,1,4,3,3,1,2,3,0,0,2,1,
+2026-07-04,Golden State Warriors,Steve Settle,16,7,3,5,1,3,0,1,0,2,1,0,0,0,2,
+2026-07-04,Golden State Warriors,Reese Dixon-Waters,17,9,4,9,1,4,0,0,1,4,0,0,0,1,0,
+2026-07-04,Golden State Warriors,Andersson Garcia,17,7,1,2,1,2,2,2,2,3,1,1,0,1,2,
+2026-07-04,Golden State Warriors,Wade Taylor,17,3,1,9,1,5,0,0,1,1,2,3,1,2,2,
+2026-07-04,Golden State Warriors,Hason Ward,15,8,4,7,0,0,0,0,1,3,0,0,1,3,4,
+2026-07-04,Golden State Warriors,Cameron Tyson,18,1,0,6,0,4,1,1,0,3,2,1,0,1,1,
 2026-07-04,Brooklyn Nets,Chaney Johnson,10,10,2,5,0,0,3,3,6,10,1,0,1,3,5,1
 2026-07-04,Brooklyn Nets,Tyler Bilodeau,24,9,4,6,1,3,0,1,1,6,0,0,1,0,4,1
 2026-07-04,Brooklyn Nets,Egor Demin,24,23,8,15,2,8,3,4,0,7,1,0,0,2,1,1
@@ -103,15 +103,15 @@ date,team,player,min,pts,fgm,fga,tpm,tpa,ftm,fta,oreb,reb,ast,stl,blk,tov,pf,app
 2026-07-05,Los Angeles Lakers,Chris Manon,20,12,4,5,0,0,3,3,0,3,3,2,0,1,1,1
 2026-07-05,Los Angeles Lakers,Zhaire Smith,18,10,3,6,1,2,2,3,0,2,1,0,1,0,5,1
 2026-07-05,Golden State Warriors,Jacksen Moni,23,18,4,8,0,3,6,8,1,3,0,0,0,1,4,1
-2026-07-05,Golden State Warriors,Reese Dixon-Waters,20,6,2,7,2,5,0,1,1,4,0,1,2,2,1,1
+2026-07-05,Golden State Warriors,Reese Dixon-Waters,20,6,2,7,2,5,0,1,1,4,0,1,2,2,1,
 2026-07-05,Golden State Warriors,Colby Jones,9,6,1,2,0,0,2,3,0,1,0,1,0,0,1,1
-2026-07-05,Golden State Warriors,Cameron Tyson,21,9,3,10,3,8,0,0,1,3,1,0,0,0,4,1
-2026-07-05,Golden State Warriors,David Green,26,6,2,6,2,4,0,1,1,4,0,0,0,0,1,1
-2026-07-05,Golden State Warriors,Wade Taylor,10,4,2,7,0,1,0,0,1,2,1,0,0,2,3,1
-2026-07-05,Golden State Warriors,RJ Nembhard,28,17,5,11,0,3,4,4,0,3,2,1,0,4,4,1
-2026-07-05,Golden State Warriors,Steve Settle,12,0,0,1,0,1,0,0,1,4,0,1,1,0,3,1
-2026-07-05,Golden State Warriors,Andersson Garcia,14,2,1,5,0,1,0,0,1,5,1,1,0,2,3,1
-2026-07-05,Golden State Warriors,Hason Ward,9,6,2,4,0,0,1,1,0,2,0,0,1,0,0,1
+2026-07-05,Golden State Warriors,Cameron Tyson,21,9,3,10,3,8,0,0,1,3,1,0,0,0,4,
+2026-07-05,Golden State Warriors,David Green,26,6,2,6,2,4,0,1,1,4,0,0,0,0,1,
+2026-07-05,Golden State Warriors,Wade Taylor,10,4,2,7,0,1,0,0,1,2,1,0,0,2,3,
+2026-07-05,Golden State Warriors,RJ Nembhard,28,17,5,11,0,3,4,4,0,3,2,1,0,4,4,
+2026-07-05,Golden State Warriors,Steve Settle,12,0,0,1,0,1,0,0,1,4,0,1,1,0,3,
+2026-07-05,Golden State Warriors,Andersson Garcia,14,2,1,5,0,1,0,0,1,5,1,1,0,2,3,
+2026-07-05,Golden State Warriors,Hason Ward,9,6,2,4,0,0,1,1,0,2,0,0,1,0,0,
 2026-07-05,Sacramento Kings,Viktor Lakhin,23,12,5,7,0,1,1,1,0,6,1,2,4,0,5,1
 2026-07-04,Milwaukee Bucks,Boopie Miller,16,4,2,6,0,0,0,1,1,4,3,2,1,2,2,1
 2026-07-05,Brooklyn Nets,Dain Dainja,17,10,5,8,0,0,0,1,1,7,2,0,1,1,2,1
