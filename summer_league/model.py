@@ -75,7 +75,7 @@ GAME_MARGIN_SD = 13.0
 # Totals. SL games are 40 minutes (4x10), not 48. BASE_TOTAL is the combined
 # regulation score between two average SL teams — a prior from typical Vegas
 # SL scoring (team scores high-80s), to be recalibrated once games are played.
-BASE_TOTAL = 174.5  # recalibrated from 178 after 7 California Classic games
+BASE_TOTAL = 176.0  # recalibrated: 38 games through July 12 average 176.4
 
 # Share of a team's rating (margin vs. average) that shows up as extra
 # scoring, vs. suppressing the opponent. SL margins are offense-driven:

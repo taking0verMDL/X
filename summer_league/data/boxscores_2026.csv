@@ -77,7 +77,7 @@ date,team,player,min,pts,fgm,fga,tpm,tpa,ftm,fta,oreb,reb,ast,stl,blk,tov,pf,app
 2026-07-04,Sacramento Kings,Darius Acuff,24,25,9,29,1,9,5,7,0,2,3,1,0,1,1,1
 2026-07-04,Sacramento Kings,Emanuel Sharp,32,13,3,11,2,9,2,2,0,4,1,2,1,0,4,1
 2026-07-04,Sacramento Kings,Nique Clifford,29,9,4,11,1,3,0,0,1,4,3,0,0,2,4,1
-2026-07-04,Sacramento Kings,Jamarion Sharp,8,5,2,2,0,0,1,1,3,3,0,0,0,0,1,1
+2026-07-04,Sacramento Kings,Jamarion Sharp,8,5,2,2,0,0,1,1,3,3,0,0,0,0,1,
 2026-07-04,Sacramento Kings,Marquel Sutton,11,2,1,2,0,0,0,0,1,5,0,1,0,0,1,1
 2026-07-04,Sacramento Kings,Adam Flagler,10,6,1,8,0,5,2,2,0,0,2,2,0,1,2,1
 2026-07-04,Sacramento Kings,Mitch Mascari,8,0,0,1,0,0,0,0,0,2,0,1,0,0,0,1
@@ -160,3 +160,640 @@ date,team,player,min,pts,fgm,fga,tpm,tpa,ftm,fta,oreb,reb,ast,stl,blk,tov,pf,app
 2026-07-04,Utah Jazz,Matthew Cleveland,14,5,1,2,0,0,2,2,1,2,0,0,0,0,3,1
 2026-07-04,Utah Jazz,Jonas Aidoo,15,2,1,2,0,0,0,0,2,6,3,0,1,2,0,1
 2026-07-04,Memphis Grizzlies,Cameron Boozer,24,15,7,11,1,3,0,1,2,4,4,0,0,2,1,1
+2026-07-09,Minnesota Timberwolves,Joan Beringer,25,18,7,15,0,0,3,3,4,11,1,1,4,1,2,1
+2026-07-09,Minnesota Timberwolves,Rocco Zikarsky,25,9,3,11,1,3,1,3,2,6,2,1,0,4,3,1
+2026-07-09,Minnesota Timberwolves,Enrique Freeman,24,10,3,7,0,2,3,5,2,6,0,0,0,5,3,1
+2026-07-09,Minnesota Timberwolves,Zyon Pullin,31,24,6,14,0,1,6,8,1,9,12,1,2,4,2,1
+2026-07-09,Minnesota Timberwolves,Donovan Williams,26,12,5,10,1,2,1,1,1,1,0,1,1,0,4,1
+2026-07-09,Minnesota Timberwolves,Trey Kaufman-Renn,16,2,1,3,0,1,0,0,4,5,0,1,0,1,1,1
+2026-07-09,Minnesota Timberwolves,Jaylin Williams,12,4,2,3,0,1,0,0,2,4,0,1,1,1,1,1
+2026-07-09,Minnesota Timberwolves,Damion Baugh,16,6,2,4,1,2,1,1,0,2,2,0,0,1,4,1
+2026-07-09,Minnesota Timberwolves,Nate Santos,25,20,5,8,5,8,3,3,1,2,0,0,0,1,4,1
+2026-07-09,New Orleans Pelicans,Hunter Dickinson,24,12,4,9,2,4,1,2,5,6,3,1,2,3,6,1
+2026-07-09,New Orleans Pelicans,Jalon Moore,20,2,1,6,0,1,0,0,0,6,1,0,0,0,6,1
+2026-07-09,New Orleans Pelicans,Micah Peavy,33,16,6,11,2,4,1,1,1,3,5,2,0,0,2,1
+2026-07-09,New Orleans Pelicans,Kobe Bufkin,32,30,8,16,5,9,6,9,2,6,2,0,1,4,5,1
+2026-07-09,New Orleans Pelicans,Markquis Nowell,31,20,7,14,5,9,1,1,0,4,6,5,0,4,6,1
+2026-07-09,New Orleans Pelicans,Nate Mensah,16,2,1,4,0,0,0,0,2,7,2,2,2,0,1,1
+2026-07-09,New Orleans Pelicans,Malik Dia,12,6,3,6,0,1,0,1,0,3,0,0,0,0,1,1
+2026-07-09,New Orleans Pelicans,Christian Shumate,9,2,1,2,0,0,0,0,2,3,0,0,0,1,1,1
+2026-07-09,New Orleans Pelicans,Dominique Daniels Jr.,5,0,0,3,0,1,0,0,0,0,1,0,0,0,2,1
+2026-07-09,New Orleans Pelicans,Jaron Pierre,12,2,1,5,0,2,0,0,0,0,1,1,0,2,2,1
+2026-07-09,New Orleans Pelicans,Chris Bell,7,0,0,2,0,2,0,0,0,0,0,1,0,2,2,1
+2026-07-09,San Antonio Spurs,Tarris Reed Jr.,21,14,5,9,0,1,2,2,4,10,2,1,0,2,4,1
+2026-07-09,San Antonio Spurs,Maliq Brown,23,2,0,2,0,1,1,1,2,4,1,3,0,0,6,1
+2026-07-09,San Antonio Spurs,Emanuel Miller,22,7,3,6,1,3,0,0,2,5,1,0,0,4,2,1
+2026-07-09,San Antonio Spurs,Ja'Kobi Gillespie,23,12,5,13,2,6,0,1,3,3,6,2,1,1,3,1
+2026-07-09,San Antonio Spurs,Carter Bryant,25,12,4,13,1,7,2,3,0,2,1,0,2,4,2,1
+2026-07-09,San Antonio Spurs,Jayden Nunn,17,1,0,4,0,2,1,3,2,5,0,0,0,1,0,1
+2026-07-09,San Antonio Spurs,Igor Milicic Jr.,6,2,1,4,0,3,0,0,2,4,0,1,0,1,2,1
+2026-07-09,San Antonio Spurs,RJ Melendez,9,2,1,3,0,1,0,1,0,2,0,1,0,3,2,1
+2026-07-09,San Antonio Spurs,Hyunjung Lee,13,0,0,4,0,4,0,0,0,1,0,1,1,1,2,1
+2026-07-09,San Antonio Spurs,RJ Davis,25,12,5,10,0,3,2,3,2,2,3,2,0,3,1,1
+2026-07-09,San Antonio Spurs,Miles Barnstable,6,0,0,4,0,3,0,0,0,0,0,0,0,0,1,1
+2026-07-09,San Antonio Spurs,Harry Wessels,6,0,0,0,0,0,0,0,2,2,0,0,1,1,2,1
+2026-07-09,San Antonio Spurs,Zakai Zeigler,2,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1
+2026-07-09,San Antonio Spurs,Tyon Grant-Foster,3,2,1,1,0,0,0,0,0,1,0,0,1,1,0,1
+2026-07-09,Atlanta Hawks,Zuby Ejiofor,24,12,2,7,1,5,4,4,2,4,3,1,0,1,6,1
+2026-07-09,Atlanta Hawks,Asa Newell,23,15,5,11,1,3,2,4,2,5,2,1,1,0,3,1
+2026-07-09,Atlanta Hawks,Gabe Madsen,24,4,1,8,0,6,1,1,2,7,2,1,1,3,3,1
+2026-07-09,Atlanta Hawks,Kingston Flemings,24,5,2,7,1,3,0,1,1,1,8,1,1,1,2,1
+2026-07-09,Atlanta Hawks,Isaac McKneely,22,10,4,9,2,7,0,0,1,2,2,0,0,1,1,1
+2026-07-09,Atlanta Hawks,Jacob Toppin,12,2,1,2,0,0,0,0,1,2,0,0,1,0,1,1
+2026-07-09,Atlanta Hawks,RayJ Dennis,16,10,3,7,0,3,2,2,0,2,3,3,0,1,0,1
+2026-07-09,Atlanta Hawks,Kobe Johnson,16,11,5,11,1,5,0,1,4,8,0,2,1,2,0,1
+2026-07-09,Atlanta Hawks,Keshon Gilbert,20,10,5,7,0,1,0,2,1,5,5,2,0,4,3,1
+2026-07-09,Atlanta Hawks,Henri Veesaar,19,14,5,8,2,5,1,2,1,6,1,1,1,1,2,1
+2026-07-09,Detroit Pistons,Ugonna Onyenso,20,2,1,3,0,0,0,0,1,4,0,3,1,0,1,1
+2026-07-09,Detroit Pistons,Isaac Jones,30,22,9,15,2,4,1,1,1,4,1,0,2,2,5,1
+2026-07-09,Detroit Pistons,Ebuka Okorie,30,20,8,16,2,5,1,1,0,1,4,2,0,1,1,1
+2026-07-09,Detroit Pistons,Chaz Lanier,32,12,4,11,1,6,2,2,0,3,1,0,1,0,0,1
+2026-07-09,Detroit Pistons,Brice Williams,27,9,1,5,0,1,3,3,0,8,2,1,0,4,3,1
+2026-07-09,Detroit Pistons,Basheer Jihad,19,10,4,5,0,0,1,3,1,3,2,1,2,0,3,1
+2026-07-09,Detroit Pistons,Jaden Henley,14,4,2,4,0,1,0,1,0,2,1,0,1,2,0,1
+2026-07-09,Detroit Pistons,Drake Allen,10,4,1,2,0,1,1,1,1,3,4,0,1,0,0,1
+2026-07-09,Detroit Pistons,Corey Stephenson,7,0,0,2,0,1,0,0,0,0,1,0,0,0,2,1
+2026-07-09,Detroit Pistons,Roddy Gayle,12,10,4,4,2,2,0,0,1,2,0,0,1,0,1,1
+2026-07-09,Philadelphia 76ers,Saint Thomas,16,0,0,2,0,2,0,0,0,4,1,0,1,1,1,1
+2026-07-09,Philadelphia 76ers,Johni Broome,27,19,9,18,1,5,0,1,8,13,2,1,2,4,4,1
+2026-07-09,Philadelphia 76ers,Taye Fields,21,2,1,1,0,0,0,0,4,6,2,2,0,0,3,1
+2026-07-09,Philadelphia 76ers,Labaron Philon,29,18,6,19,4,10,1,2,1,3,7,1,0,3,1,1
+2026-07-09,Philadelphia 76ers,Dante Maddox Jr.,31,21,7,13,4,6,1,1,0,4,0,1,0,0,3,1
+2026-07-09,Philadelphia 76ers,Amani Lyles,14,11,4,7,1,3,1,1,0,2,0,0,1,2,1,1
+2026-07-09,Philadelphia 76ers,Isaac Johnson,20,20,6,10,4,6,2,2,0,2,1,0,1,0,3,1
+2026-07-09,Philadelphia 76ers,Duke Miles,17,3,1,3,1,3,0,0,0,2,5,0,0,1,1,1
+2026-07-09,Philadelphia 76ers,Matt Rogers,22,7,3,8,1,3,0,0,2,3,3,0,0,0,1,1
+2026-07-09,Philadelphia 76ers,Drew Cisse,3,0,0,0,0,0,0,1,0,1,1,0,0,0,1,1
+2026-07-09,Golden State Warriors,Yaxel Lendeborg,28,21,8,13,2,4,2,4,4,10,6,0,0,2,4,1
+2026-07-09,Golden State Warriors,Malevy Leons,26,8,4,9,0,2,0,1,3,8,0,1,0,1,2,1
+2026-07-09,Golden State Warriors,Will Richard,28,6,3,5,0,0,0,0,1,4,7,2,1,2,3,1
+2026-07-09,Golden State Warriors,Graham Ike,25,9,3,9,0,0,2,2,3,9,3,0,1,3,8,1
+2026-07-09,Golden State Warriors,LJ Cryer,27,25,8,14,5,8,2,2,0,6,4,0,0,2,2,1
+2026-07-09,Golden State Warriors,Lachlan Olbrich,15,12,2,8,0,0,4,5,1,2,1,1,0,4,3,1
+2026-07-09,Golden State Warriors,Lajae Jones,15,11,4,5,2,2,1,1,0,5,0,0,1,1,1,1
+2026-07-09,Golden State Warriors,Chance McMillian,12,4,1,5,0,2,1,1,1,1,0,0,0,1,3,1
+2026-07-09,Golden State Warriors,Deivon Smith,14,2,1,1,0,0,0,0,0,4,1,1,1,2,0,1
+2026-07-09,Golden State Warriors,Jack Clark,11,3,1,3,1,2,0,0,0,2,0,2,1,0,2,1
+2026-07-09,Dallas Mavericks,Sergio De Larrea,29,9,3,14,1,9,1,1,1,6,5,1,1,1,2,1
+2026-07-09,Dallas Mavericks,Tobi Lawal,14,5,2,6,1,3,0,0,2,4,1,0,1,0,0,1
+2026-07-09,Dallas Mavericks,Morez Johnson Jr.,32,27,12,17,1,4,2,2,1,8,3,3,2,2,7,1
+2026-07-09,Dallas Mavericks,John Poulakidas,24,14,5,15,4,12,0,0,1,2,1,0,0,0,2,1
+2026-07-09,Dallas Mavericks,Ryan Nembhard,35,15,6,15,1,6,1,2,0,3,11,1,1,2,4,1
+2026-07-09,Dallas Mavericks,Ja'Vier Francis,1,0,0,0,0,0,0,1,0,1,0,0,1,0,1,1
+2026-07-09,Dallas Mavericks,Vsevolod Ishchenko,27,7,2,4,0,0,2,3,1,3,1,1,0,0,2,1
+2026-07-09,Dallas Mavericks,Tyler Smith,10,7,2,5,1,3,1,2,1,1,0,0,1,1,1,1
+2026-07-09,Dallas Mavericks,Jorge Diaz Graham,5,0,0,1,0,1,0,0,0,0,0,1,0,0,1,1
+2026-07-09,Dallas Mavericks,Jaden Springer,15,4,1,1,0,0,1,2,0,2,1,2,2,2,1,1
+2026-07-09,Dallas Mavericks,Kaodirichi Akobundu-Ehiogu,8,2,1,1,0,0,0,0,0,0,0,1,1,0,2,1
+2026-07-09,Charlotte Hornets,Ryan Kalkbrenner,30,10,5,7,0,0,0,2,7,9,5,0,3,4,0,1
+2026-07-09,Charlotte Hornets,Tidjane Salaun,22,9,3,4,1,1,1,1,0,3,1,2,0,3,1,1
+2026-07-09,Charlotte Hornets,Liam McNeeley,28,28,9,18,7,8,3,4,0,2,4,0,0,2,3,1
+2026-07-09,Charlotte Hornets,Christian Anderson,26,6,2,11,0,5,1,1,0,1,2,0,0,2,0,1
+2026-07-09,Charlotte Hornets,Sion James,27,6,2,10,2,8,0,0,1,5,4,0,0,4,3,1
+2026-07-09,Charlotte Hornets,Latrell Wrightsell,15,3,1,4,1,3,0,0,0,1,1,1,0,0,1,1
+2026-07-09,Charlotte Hornets,Kylan Boswell,14,0,0,3,0,2,0,0,0,2,2,0,0,1,1,1
+2026-07-09,Charlotte Hornets,Hannes Steinbach,22,15,4,7,0,0,4,4,4,11,2,1,2,3,0,1
+2026-07-09,Charlotte Hornets,Michael Ajayi,16,9,3,5,1,3,1,3,3,7,2,2,1,0,3,1
+2026-07-09,Orlando Magic,Colin Castleton,15,3,1,4,1,3,0,1,2,3,1,1,0,1,2,1
+2026-07-09,Orlando Magic,Noah Penda,30,23,9,15,5,10,0,0,1,7,2,2,3,0,5,1
+2026-07-09,Orlando Magic,Jase Richardson,30,15,6,14,1,4,1,1,1,4,4,2,0,3,1,1
+2026-07-09,Orlando Magic,Alex Morales,27,6,2,5,0,2,1,2,0,4,0,1,0,3,3,1
+2026-07-09,Orlando Magic,Lester Quinones,24,10,4,11,2,4,0,0,2,3,4,1,0,1,1,1
+2026-07-09,Orlando Magic,Keon Johnson,13,6,2,9,0,4,1,2,1,3,1,1,0,0,1,1
+2026-07-09,Orlando Magic,Izaiyah Nelson,15,2,1,4,0,1,0,0,2,6,0,1,1,2,5,1
+2026-07-09,Orlando Magic,Phillip Wheeler,14,4,2,5,0,3,0,0,0,0,0,1,1,2,2,1
+2026-07-09,Orlando Magic,Johnell Davis,3,3,1,2,1,2,0,0,0,0,0,0,0,1,0,1
+2026-07-09,Orlando Magic,TyTy Washington,16,2,1,4,0,2,0,0,1,2,2,0,0,1,0,1
+2026-07-09,Utah Jazz,Orlando Robinson,22,10,3,6,0,1,2,3,2,6,0,0,1,2,3,1
+2026-07-09,Utah Jazz,Cody Williams,30,16,6,12,2,3,1,2,1,5,2,4,1,3,2,1
+2026-07-09,Utah Jazz,Blake Hinson,17,0,0,2,0,2,0,0,2,3,1,1,0,0,2,1
+2026-07-09,Utah Jazz,Darryn Peterson,30,24,6,18,2,7,6,8,2,3,3,0,1,8,9,1
+2026-07-09,Utah Jazz,Tamar Bates,21,9,4,6,1,3,0,0,1,3,2,1,0,0,2,1
+2026-07-09,Utah Jazz,Andersson Garcia,14,6,2,2,2,2,0,1,1,2,2,0,0,0,3,1
+2026-07-09,Utah Jazz,Jonas Aidoo,18,8,3,5,0,0,1,2,2,5,0,0,5,3,8,1
+2026-07-09,Utah Jazz,Max Abmas,14,0,0,6,0,5,0,0,0,1,5,0,0,2,1,1
+2026-07-09,Utah Jazz,Justin Harmon,11,2,1,3,0,1,0,0,1,4,1,0,1,0,2,1
+2026-07-09,Utah Jazz,Trey Alexander,24,13,4,9,3,4,1,2,2,5,2,0,0,1,1,1
+2026-07-09,Washington Wizards,AJ Dybantsa,26,27,7,18,0,5,7,8,0,7,2,2,1,1,1,1
+2026-07-09,Washington Wizards,Felix Okpara,20,4,2,6,0,0,0,0,3,6,2,1,0,2,3,1
+2026-07-09,Washington Wizards,Tre Johnson,28,26,11,20,2,8,1,1,0,2,1,1,0,4,4,1
+2026-07-09,Washington Wizards,Will Riley,29,18,5,12,1,2,5,6,0,3,2,0,0,3,3,1
+2026-07-09,Washington Wizards,Jamir Watkins,20,2,1,2,0,0,0,0,1,4,0,1,0,0,9,1
+2026-07-09,Washington Wizards,Julian Reese,21,6,1,3,0,0,2,5,1,4,1,1,0,2,5,1
+2026-07-09,Washington Wizards,Kadary Richmond,4,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1
+2026-07-09,Washington Wizards,Reece Beekman,23,0,0,1,0,1,0,0,0,2,0,1,3,2,1,1
+2026-07-09,Washington Wizards,Seth Trimble,12,2,1,2,0,1,0,0,2,3,3,2,0,0,1,1
+2026-07-09,Washington Wizards,Chris Livingston,17,7,3,5,0,0,1,1,2,3,1,1,0,1,0,1
+2026-07-09,Sacramento Kings,Alex Karaban,24,0,0,6,0,4,0,0,1,2,1,0,1,3,1,1
+2026-07-09,Sacramento Kings,Darius Acuff,28,19,6,20,3,9,2,4,0,3,7,2,1,4,1,1
+2026-07-09,Sacramento Kings,Dylan Cardwell,25,15,5,8,0,1,3,3,4,9,2,0,2,0,9,1
+2026-07-09,Sacramento Kings,Nique Clifford,26,13,4,8,1,3,2,2,0,3,1,2,1,2,6,1
+2026-07-09,Sacramento Kings,Jonathan Mogbo,24,12,4,7,1,1,2,3,2,7,3,1,1,3,3,1
+2026-07-09,Sacramento Kings,Marquel Sutton,18,9,4,4,1,1,0,0,2,5,1,1,0,2,4,1
+2026-07-09,Sacramento Kings,Viktor Lakhin,5,0,0,1,0,0,0,0,0,1,0,0,1,2,4,1
+2026-07-09,Sacramento Kings,Isaiah Stevens,12,2,1,2,0,0,0,0,0,1,5,0,0,0,3,1
+2026-07-09,Sacramento Kings,Emanuel Sharp,26,21,4,10,3,8,7,8,1,2,0,4,0,0,1,1
+2026-07-09,Sacramento Kings,Adam Flagler,12,0,0,6,0,2,0,0,0,1,2,1,0,0,0,1
+2026-07-09,LA Clippers,Norchad Omier,18,7,1,5,1,3,2,3,2,3,1,0,0,1,4,1
+2026-07-09,LA Clippers,Keaton Wagler,27,7,1,7,1,5,3,4,1,2,1,0,0,1,5,1
+2026-07-09,LA Clippers,Cam Christie,31,15,3,7,1,3,4,5,1,8,1,0,0,3,2,1
+2026-07-09,LA Clippers,Kobe Sanders,33,10,3,10,0,5,2,2,2,6,4,4,0,1,3,1
+2026-07-09,LA Clippers,Baba Miller,27,12,3,4,1,1,3,4,2,5,1,0,3,2,4,1
+2026-07-09,LA Clippers,Fletcher Loyer,12,7,3,5,1,3,0,0,0,3,1,0,0,0,0,1
+2026-07-09,LA Clippers,Nick Martinelli,22,11,2,7,0,1,4,7,1,5,2,0,0,3,2,1
+2026-07-09,LA Clippers,Zach Freemantle,7,2,0,0,0,0,1,1,0,1,0,0,0,0,1,1
+2026-07-09,LA Clippers,Riley Kugel,4,3,1,1,1,1,0,0,0,0,0,0,0,0,0,1
+2026-07-09,LA Clippers,Sean Pedulla,20,11,1,8,1,6,4,4,0,0,2,2,0,6,2,1
+2026-07-10,Milwaukee Bucks,Bogoljub Markovic,20,6,3,10,0,2,0,0,1,5,2,0,2,0,2,1
+2026-07-10,Milwaukee Bucks,Nate Ament,17,6,3,7,0,3,0,0,1,3,2,0,0,1,1,1
+2026-07-10,Milwaukee Bucks,Pete Nance,26,16,6,10,4,8,0,0,1,7,0,0,2,1,2,1
+2026-07-10,Milwaukee Bucks,Kasparas Jakucionis,21,11,2,10,2,3,2,3,3,3,6,1,0,2,5,1
+2026-07-10,Milwaukee Bucks,Brayden Burries,22,18,6,15,1,5,3,3,0,3,3,0,0,0,1,1
+2026-07-10,Milwaukee Bucks,Luke Travers,11,0,0,3,0,2,0,0,1,2,0,0,0,2,0,1
+2026-07-10,Milwaukee Bucks,Kobe Stewart,6,2,1,3,0,1,0,0,2,2,0,0,0,1,0,1
+2026-07-10,Milwaukee Bucks,Zack Austin,11,3,1,4,1,3,0,0,1,1,0,0,0,1,1,1
+2026-07-10,Milwaukee Bucks,John Butler,6,6,1,2,1,2,1,1,2,2,0,0,0,2,1,1
+2026-07-10,Milwaukee Bucks,Kuany Kuany,3,0,0,1,0,1,0,2,0,0,0,0,0,0,0,1
+2026-07-10,Milwaukee Bucks,Boopie Miller,6,3,1,4,1,1,0,0,1,1,2,0,0,1,1,1
+2026-07-10,Milwaukee Bucks,Boopie Miller,6,3,1,4,1,1,0,0,1,1,2,0,0,1,1,1
+2026-07-10,Milwaukee Bucks,Rafael Castro,6,0,0,0,0,0,0,0,0,1,0,0,1,0,0,1
+2026-07-10,Milwaukee Bucks,Brandon Boston,14,6,2,5,0,1,1,1,2,2,0,2,0,1,0,1
+2026-07-10,Milwaukee Bucks,Jesse Edwards,10,2,1,1,0,0,0,0,0,0,1,0,1,1,3,1
+2026-07-10,Milwaukee Bucks,Cormac Ryan,22,7,2,7,1,4,1,1,1,8,1,0,2,4,3,1
+2026-07-10,Miami Heat,Vladislav Goldin,20,14,4,8,0,0,3,4,1,6,2,0,2,1,3,1
+2026-07-10,Miami Heat,J'Vonne Hadley,24,4,0,1,0,0,3,3,1,7,2,2,0,1,5,1
+2026-07-10,Miami Heat,Ryan Conwell,27,19,7,16,2,8,1,1,0,1,3,0,1,0,6,1
+2026-07-10,Miami Heat,Tre Donaldson,23,12,4,5,2,2,1,1,0,0,6,2,1,2,1,1
+2026-07-10,Miami Heat,Trevor Keels,25,14,6,11,2,6,0,0,0,5,4,3,0,2,0,1
+2026-07-10,Miami Heat,Jahmir Young,20,19,8,15,2,5,1,2,1,2,7,2,0,2,1,1
+2026-07-10,Miami Heat,Arnas Sakenis,17,5,2,5,1,1,0,0,2,4,0,0,2,1,0,1
+2026-07-10,Miami Heat,Tre White,24,16,5,11,2,6,3,3,2,10,2,1,0,0,0,1
+2026-07-10,Miami Heat,Meechie Johnson,2,0,0,0,0,0,0,0,1,1,1,1,0,0,0,1
+2026-07-10,Miami Heat,Ian Schieffelin,18,16,5,7,2,3,2,2,1,4,0,1,1,2,2,1
+2026-07-10,Cleveland Cavaliers,Ernest Udeh Jr.,20,4,1,4,0,0,1,1,2,2,1,1,0,0,2,1
+2026-07-10,Cleveland Cavaliers,Riley Minix,25,10,5,15,0,6,0,1,2,5,1,0,0,1,5,1
+2026-07-10,Cleveland Cavaliers,Nae'Qwan Tomlin,29,20,8,14,2,4,1,1,2,6,4,3,1,2,4,1
+2026-07-10,Cleveland Cavaliers,Meleek Thomas,27,20,7,15,2,5,2,2,3,5,3,1,0,0,5,1
+2026-07-10,Cleveland Cavaliers,Malaki Branham,22,15,4,8,1,2,5,6,1,4,2,2,1,3,1,1
+2026-07-10,Cleveland Cavaliers,Tristan Enaruna,6,2,1,7,0,2,0,0,2,3,0,1,0,0,1,1
+2026-07-10,Cleveland Cavaliers,Dane Goodwin,16,4,2,7,0,3,0,0,1,3,2,2,0,0,3,1
+2026-07-10,Cleveland Cavaliers,Xaivian Lee,13,2,1,6,0,3,0,0,0,1,1,0,0,0,4,1
+2026-07-10,Cleveland Cavaliers,Jaxson Robinson,21,9,3,9,2,6,1,1,1,4,2,1,0,1,0,1
+2026-07-10,Cleveland Cavaliers,Rashaun Agee,14,4,1,2,0,0,1,1,1,5,0,1,1,2,3,1
+2026-07-10,Cleveland Cavaliers,Sean East II,8,3,1,1,1,1,0,0,0,1,1,0,0,0,3,1
+2026-07-10,Indiana Pacers,Rienk Mast,32,16,6,12,1,6,2,3,7,11,3,1,0,1,0,1
+2026-07-10,Indiana Pacers,Jalen Slawson,23,15,4,15,2,9,4,6,2,6,5,1,5,3,6,1
+2026-07-10,Indiana Pacers,Tamin Lipsey,18,4,2,4,0,1,0,1,1,4,0,1,0,1,2,1
+2026-07-10,Indiana Pacers,Braden Smith,30,5,1,8,1,5,1,2,1,8,4,3,0,4,4,1
+2026-07-10,Indiana Pacers,Taelon Peter,24,13,4,8,3,7,2,3,0,0,3,0,0,2,1,1
+2026-07-10,Indiana Pacers,Yuki Kawamura,17,8,3,5,0,2,1,2,0,1,4,0,0,1,2,1
+2026-07-10,Indiana Pacers,Keba Keita,8,5,2,2,0,0,1,1,0,2,0,0,1,0,0,1
+2026-07-10,Indiana Pacers,Gabe McGlothan,17,6,2,5,0,1,1,2,1,5,0,0,1,0,2,1
+2026-07-10,Indiana Pacers,Keion Brooks,14,11,3,7,0,2,3,3,0,5,1,0,1,1,0,1
+2026-07-10,Indiana Pacers,Taevion Kinsey,16,16,4,5,4,5,2,2,0,1,1,0,0,1,1,1
+2026-07-10,Brooklyn Nets,Chaney Johnson,23,11,4,7,1,1,1,2,4,9,2,4,0,2,3,1
+2026-07-10,Brooklyn Nets,Danny Wolf,21,9,2,6,1,3,2,4,3,8,3,0,1,1,2,1
+2026-07-10,Brooklyn Nets,Egor Demin,22,20,7,15,3,9,2,3,0,3,2,1,1,1,4,1
+2026-07-10,Brooklyn Nets,Mikel Brown Jr.,22,20,6,12,3,6,3,3,0,1,3,2,1,2,3,1
+2026-07-10,Brooklyn Nets,Drake Powell,21,1,0,7,0,3,1,1,1,3,1,0,0,0,3,1
+2026-07-10,Brooklyn Nets,Dion Brown,7,0,0,2,0,1,0,0,0,1,0,0,0,0,0,1
+2026-07-10,Brooklyn Nets,Tyler Bilodeau,15,2,1,3,0,1,0,0,0,2,2,1,0,1,3,1
+2026-07-10,Brooklyn Nets,Aaron Scott,4,4,1,1,0,0,1,1,1,3,0,0,0,0,0,1
+2026-07-10,Brooklyn Nets,Dain Dainja,12,6,3,5,0,0,0,0,4,6,0,0,1,1,1,1
+2026-07-10,Brooklyn Nets,Ben Saraf,20,7,2,8,1,4,1,1,0,5,1,0,0,0,1,1
+2026-07-10,Brooklyn Nets,Ben Humrichous,19,9,3,5,3,5,0,0,1,5,0,0,0,0,2,1
+2026-07-10,Brooklyn Nets,John Ukomadu,4,2,1,2,0,1,0,0,0,0,0,0,2,3,0,1
+2026-07-10,Brooklyn Nets,Duke Brennan,4,0,0,0,0,0,0,1,2,3,1,0,0,0,0,1
+2026-07-10,Brooklyn Nets,Hunter Sallis,5,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1
+2026-07-10,New York Knicks,Liam Robbins,16,4,2,2,0,0,0,0,1,4,1,0,1,3,2,1
+2026-07-10,New York Knicks,Mohamed Diawara,23,7,1,9,1,7,2,3,1,6,0,0,0,3,1,1
+2026-07-10,New York Knicks,Pacome Dadiet,21,20,6,16,1,7,4,4,4,7,0,1,0,0,1,1
+2026-07-10,New York Knicks,Dillon Jones,23,6,1,6,0,3,2,2,0,3,4,3,1,3,3,1
+2026-07-10,New York Knicks,Jaden Akins,21,2,0,5,0,3,1,1,0,0,2,0,0,2,4,1
+2026-07-10,New York Knicks,Lance Ware,16,0,0,4,0,0,0,1,3,5,3,1,0,0,2,1
+2026-07-10,New York Knicks,Treysen Eaglestaff,5,0,0,3,0,3,0,0,0,0,2,1,0,0,0,1
+2026-07-10,New York Knicks,Oziyah Sellers,17,5,2,4,0,1,1,1,0,1,1,0,0,1,2,1
+2026-07-10,New York Knicks,Nick Jourdain,8,0,0,0,0,0,0,0,1,3,3,0,0,1,0,1
+2026-07-10,New York Knicks,Will Johnston,16,0,0,3,0,2,0,1,0,2,0,1,0,0,2,1
+2026-07-10,New York Knicks,Tyler Nickel,22,18,6,11,6,10,0,1,0,4,0,0,0,0,2,1
+2026-07-10,New York Knicks,Toby Okani,6,0,0,3,0,2,0,0,0,1,0,0,1,0,2,1
+2026-07-10,New York Knicks,Erik Reynolds II,5,3,1,1,1,1,0,0,0,0,0,0,0,0,0,1
+2026-07-10,Houston Rockets,Michael Foster Jr.,15,4,2,5,0,1,0,0,2,3,0,2,3,3,4,1
+2026-07-10,Houston Rockets,Isaiah Crawford,33,17,5,16,1,8,4,4,4,7,4,3,3,1,4,1
+2026-07-10,Houston Rockets,Bruce Thornton,35,27,7,18,3,8,7,7,0,3,3,3,0,1,6,1
+2026-07-10,Houston Rockets,Quadir Copeland,31,14,4,6,2,3,2,3,1,7,2,2,0,4,9,1
+2026-07-10,Houston Rockets,Tristen Newton,26,13,3,9,0,4,4,7,2,3,2,3,0,1,7,1
+2026-07-10,Houston Rockets,Oscar Cluff,21,6,3,5,0,2,0,1,2,9,1,1,2,0,2,1
+2026-07-10,Houston Rockets,Ben Middlebrooks,4,0,0,1,0,1,0,0,0,0,0,0,1,0,2,1
+2026-07-10,Houston Rockets,Daishen Nix,25,10,3,7,1,3,3,5,2,2,1,1,1,6,2,1
+2026-07-10,Houston Rockets,Miller Kopp,10,6,2,5,2,5,0,0,0,0,0,0,0,0,0,1
+2026-07-10,Denver Nuggets,Giovanni Emejuru,19,2,0,4,0,0,1,2,4,8,0,0,0,1,4,1
+2026-07-10,Denver Nuggets,Trevon Brazile,29,5,2,8,1,1,0,1,5,11,0,1,0,4,5,1
+2026-07-10,Denver Nuggets,Bryce Hopkins,26,24,9,13,1,2,3,6,0,4,0,3,2,2,2,1
+2026-07-10,Denver Nuggets,KJ Simpson,30,17,4,13,0,4,6,7,0,2,9,1,1,4,7,1
+2026-07-10,Denver Nuggets,Erik Stevenson,25,6,3,8,0,4,0,0,0,3,0,3,1,1,5,1
+2026-07-10,Denver Nuggets,Dejon Jarreau,18,9,3,8,1,2,2,3,3,7,3,0,2,4,2,1
+2026-07-10,Denver Nuggets,Jahmi'us Ramsey,16,3,1,5,1,5,0,0,0,4,1,1,0,2,0,1
+2026-07-10,Denver Nuggets,Mark Sears,10,4,2,5,0,2,0,0,0,1,1,1,0,3,2,1
+2026-07-10,Denver Nuggets,Osayi Osifo,13,8,1,1,0,0,3,3,1,2,0,0,0,1,4,1
+2026-07-10,Denver Nuggets,Mark Mitchell,14,8,3,5,0,2,2,2,2,3,0,0,0,0,0,1
+2026-07-10,Chicago Bulls,Noa Essengue,29,10,2,5,0,2,3,7,2,5,1,2,4,1,5,1
+2026-07-10,Chicago Bulls,Tobe Awaka,18,0,0,2,0,0,0,0,1,3,0,0,1,0,6,1
+2026-07-10,Chicago Bulls,Caleb Wilson,33,35,12,21,7,11,2,6,3,5,0,2,3,6,2,1
+2026-07-10,Chicago Bulls,Dailyn Swain,31,7,3,10,0,3,1,1,1,4,3,1,0,2,4,1
+2026-07-10,Chicago Bulls,Jaylin Sellers,29,15,4,13,2,6,4,6,1,4,4,1,0,2,5,1
+2026-07-10,Chicago Bulls,Malik Williams,22,10,3,6,2,4,1,2,3,7,1,1,1,1,4,1
+2026-07-10,Chicago Bulls,Donovan Atwell,15,6,2,4,2,4,0,1,0,1,0,1,0,0,0,1
+2026-07-10,Chicago Bulls,Boo Buie,3,2,1,1,0,0,0,0,0,0,0,0,0,0,0,1
+2026-07-10,Chicago Bulls,Kennedy Chandler,20,11,3,7,1,2,2,2,0,0,5,0,2,1,1,1
+2026-07-10,Memphis Grizzlies,Cameron Boozer,27,23,7,12,1,1,5,5,1,6,4,1,1,4,7,1
+2026-07-10,Memphis Grizzlies,Cedric Coward,30,17,5,12,1,5,3,4,3,10,5,0,2,3,7,1
+2026-07-10,Memphis Grizzlies,Taylor Hendricks,25,10,3,9,0,5,2,2,1,5,1,0,4,1,5,1
+2026-07-10,Memphis Grizzlies,Olivier-Maxence Prosper,29,13,5,12,1,5,1,2,1,5,1,0,0,4,3,1
+2026-07-10,Memphis Grizzlies,Javon Small,29,15,5,14,0,5,4,5,1,2,3,2,0,0,3,1
+2026-07-10,Memphis Grizzlies,Carson Cooper,15,0,0,0,0,0,0,2,1,2,1,1,0,1,2,1
+2026-07-10,Memphis Grizzlies,Jahmai Mashack,13,4,1,3,0,0,1,1,0,1,0,2,0,0,0,1
+2026-07-10,Memphis Grizzlies,Lawson Lovering,16,8,4,4,0,0,0,0,1,1,0,0,0,0,4,1
+2026-07-10,Memphis Grizzlies,Tyler Burton,5,3,1,1,0,0,1,1,0,2,0,0,0,0,3,1
+2026-07-10,Memphis Grizzlies,Zach Cleveland,11,4,2,3,0,0,0,0,0,1,3,2,0,1,0,1
+2026-07-10,Boston Celtics,Amari Williams,29,23,7,9,0,0,5,8,4,13,2,0,2,3,3,1
+2026-07-10,Boston Celtics,Dillon Mitchell,26,4,2,6,0,0,0,1,2,3,0,2,2,2,2,1
+2026-07-10,Boston Celtics,Hugo Gonzalez,37,17,3,16,1,9,6,9,3,10,8,1,0,3,3,1
+2026-07-10,Boston Celtics,Curtis Jones,10,0,0,3,0,1,0,0,0,2,1,1,0,2,3,1
+2026-07-10,Boston Celtics,John Tonje,26,20,6,14,5,9,1,1,0,5,2,3,0,2,0,1
+2026-07-10,Boston Celtics,Chris Cenac Jr.,29,14,5,13,2,4,1,1,5,10,0,1,4,3,3,1
+2026-07-10,Boston Celtics,Hank Morgan,4,0,0,1,0,1,0,0,1,1,0,0,0,0,1,1
+2026-07-10,Boston Celtics,Milos Uzan,30,5,2,9,1,3,0,0,0,4,5,0,0,0,2,1
+2026-07-10,Boston Celtics,Alondes Williams,9,0,0,6,0,3,0,0,2,3,1,0,1,1,0,1
+2026-07-10,Boston Celtics,Kyle Mangas,10,0,0,5,0,4,0,0,0,0,0,0,0,0,2,1
+2026-07-10,Toronto Raptors,Nate Bittle,26,8,3,7,2,5,0,0,2,10,3,0,6,3,4,1
+2026-07-10,Toronto Raptors,Allen Graves,29,22,9,16,3,8,1,1,5,13,0,3,2,2,3,1
+2026-07-10,Toronto Raptors,Chucky Hepburn,29,11,4,16,1,9,1,1,0,2,5,1,0,1,3,1
+2026-07-10,Toronto Raptors,Nimari Burnett,24,10,4,10,0,4,1,1,1,2,5,0,0,1,4,1
+2026-07-10,Toronto Raptors,Seth Lundy,26,16,4,15,2,11,4,4,2,6,1,1,0,1,3,1
+2026-07-10,Toronto Raptors,Tyreke Key,16,6,2,6,1,3,1,1,0,2,1,0,0,3,2,1
+2026-07-10,Toronto Raptors,Brandon Angel,15,2,1,2,0,0,0,0,3,4,0,0,0,0,3,1
+2026-07-10,Toronto Raptors,Jaden Bradley,18,3,1,9,0,0,1,1,1,5,2,0,0,2,2,1
+2026-07-10,Toronto Raptors,Tyson Degenhart,10,2,1,6,0,3,0,0,1,1,0,0,0,0,1,1
+2026-07-10,Toronto Raptors,Jamarion Sharp,17,0,0,1,0,0,0,2,2,7,0,3,4,4,3,1
+2026-07-10,Oklahoma City Thunder,Aday Mara,25,2,0,3,0,0,1,3,3,7,1,1,2,3,3,1
+2026-07-10,Oklahoma City Thunder,Bennett Stirtz,28,18,7,14,3,8,1,1,0,0,2,1,1,4,2,1
+2026-07-10,Oklahoma City Thunder,Josh Dix,24,8,3,6,2,5,0,0,0,2,1,0,0,1,0,1
+2026-07-10,Oklahoma City Thunder,Brooks Barnhizer,24,12,3,7,0,0,3,4,3,10,2,2,1,2,5,1
+2026-07-10,Oklahoma City Thunder,Buddy Boeheim,23,8,2,8,2,7,1,1,1,2,1,1,0,0,2,1
+2026-07-10,Oklahoma City Thunder,Payton Sandfort,19,10,4,9,2,5,0,0,2,7,0,0,0,2,2,1
+2026-07-10,Oklahoma City Thunder,Christoph Tilly,15,10,5,7,0,0,0,0,2,7,1,0,0,1,2,1
+2026-07-10,Oklahoma City Thunder,Nate Johnson,16,4,1,6,0,2,1,1,0,1,2,0,0,1,2,1
+2026-07-10,Oklahoma City Thunder,Anthony Pritchard,19,10,4,9,0,0,1,1,2,5,2,2,0,4,1,1
+2026-07-10,Oklahoma City Thunder,Bryce Thompson,7,2,0,1,0,0,1,2,0,1,0,0,0,2,2,1
+2026-07-10,Los Angeles Lakers,Adou Thiero,30,20,8,14,0,5,2,5,1,4,4,3,2,0,3,1
+2026-07-10,Los Angeles Lakers,Anton Watson,23,15,6,12,3,6,0,0,1,1,4,1,0,2,0,1
+2026-07-10,Los Angeles Lakers,Cameron Carr,29,18,7,13,1,5,2,3,0,2,1,1,2,2,3,1
+2026-07-10,Los Angeles Lakers,William Hickey,16,9,4,7,1,2,0,1,2,7,3,1,0,1,1,1
+2026-07-10,Los Angeles Lakers,Chris Manon,24,4,2,4,0,2,0,1,1,4,5,2,0,3,4,1
+2026-07-10,Los Angeles Lakers,William Kyle III,9,0,0,0,0,0,0,1,0,2,2,1,0,1,0,1
+2026-07-10,Los Angeles Lakers,Peter Suder,14,3,1,4,1,2,0,0,1,5,2,1,0,2,2,1
+2026-07-10,Los Angeles Lakers,AK Okereke,15,5,2,4,1,2,0,0,2,4,1,0,2,2,3,1
+2026-07-10,Los Angeles Lakers,Chase Ross,13,2,1,2,0,0,0,0,0,1,1,1,0,0,0,1
+2026-07-10,Los Angeles Lakers,Arthur Kaluma,16,18,5,5,1,1,5,5,2,4,1,0,0,0,3,1
+2026-07-10,Los Angeles Lakers,Zhaire Smith,10,2,1,4,0,2,0,0,0,0,0,0,0,0,2,1
+2026-07-10,Portland Trail Blazers,DJ Steward,25,21,8,18,3,8,1,2,2,8,2,2,1,4,3,1
+2026-07-10,Portland Trail Blazers,Yang Hansen,26,12,5,10,2,3,0,1,3,9,4,0,0,4,4,1
+2026-07-10,Portland Trail Blazers,Frankie Fidler,23,13,3,9,1,4,4,4,1,4,0,2,0,2,1,1
+2026-07-10,Portland Trail Blazers,Chris Youngblood,31,8,3,13,0,8,1,1,2,5,1,0,1,2,5,1
+2026-07-10,Portland Trail Blazers,Jayson Kent,28,9,3,10,1,5,1,1,3,6,3,3,1,2,2,1
+2026-07-10,Portland Trail Blazers,Aliou Diarra,11,2,1,2,0,0,0,0,1,6,0,0,0,1,3,1
+2026-07-10,Portland Trail Blazers,Quincy Olivari,11,4,1,2,0,1,1,2,0,1,2,1,0,1,2,1
+2026-07-10,Portland Trail Blazers,Andrew Carr,9,2,0,3,0,2,1,1,1,2,0,0,1,0,3,1
+2026-07-10,Portland Trail Blazers,Jaylen Martin,18,4,0,6,0,4,2,2,1,4,3,1,0,4,0,1
+2026-07-10,Portland Trail Blazers,Barry Dunning Jr.,2,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1
+2026-07-10,Portland Trail Blazers,Jalen Bridges,15,4,2,3,0,1,0,0,1,4,0,1,0,0,0,1
+2026-07-10,Phoenix Suns,Khaman Maluach,26,19,7,15,3,7,1,1,2,11,0,2,1,7,5,1
+2026-07-10,Phoenix Suns,Rasheer Fleming,25,6,3,9,0,4,0,0,3,10,1,2,2,2,1,1
+2026-07-10,Phoenix Suns,Koa Peat,28,17,6,11,0,0,3,5,2,6,4,0,1,3,8,1
+2026-07-10,Phoenix Suns,Koby Brea,25,5,1,7,0,4,2,2,0,2,2,1,0,3,2,1
+2026-07-10,Phoenix Suns,Darius Brown II,28,5,1,6,0,3,2,4,0,3,7,1,0,2,3,1
+2026-07-10,Phoenix Suns,Corey Camper,15,4,2,4,0,1,0,0,1,1,1,1,0,0,0,1
+2026-07-10,Phoenix Suns,Sam Hoiberg,9,0,0,0,0,0,0,0,2,4,0,1,0,0,2,1
+2026-07-10,Phoenix Suns,Javonte Cooke,24,21,7,12,5,8,1,1,0,1,0,0,0,0,5,1
+2026-07-10,Phoenix Suns,Jameer Nelson Jr.,19,4,0,7,0,1,2,4,1,6,3,3,1,3,1,1
+2026-07-11,Miami Heat,Vladislav Goldin,19,6,2,5,0,1,1,2,3,5,1,0,1,0,1,1
+2026-07-11,Miami Heat,Tre White,29,13,3,9,3,6,2,2,1,5,4,4,1,0,1,1
+2026-07-11,Miami Heat,J'Vonne Hadley,26,2,1,4,0,3,0,0,1,7,3,0,0,1,0,1
+2026-07-11,Miami Heat,Jahmir Young,35,27,8,23,3,11,5,6,0,1,6,3,1,4,1,1
+2026-07-11,Miami Heat,Trevor Keels,30,32,12,19,6,10,1,1,0,4,2,1,0,1,2,1
+2026-07-11,Miami Heat,Arnas Sakenis,7,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1
+2026-07-11,Miami Heat,Ian Schieffelin,17,0,0,4,0,2,0,0,2,2,2,0,0,1,6,1
+2026-07-11,Miami Heat,Kendall Brown,11,4,2,3,0,1,0,1,0,0,0,1,0,0,1,1
+2026-07-11,Miami Heat,Keyshawn Hall,15,2,1,1,0,0,0,1,0,1,0,0,0,1,2,1
+2026-07-11,Miami Heat,Meechie Johnson,11,2,1,4,0,2,0,0,1,1,0,1,0,2,2,1
+2026-07-11,Orlando Magic,Colin Castleton,23,15,5,8,1,2,2,2,1,8,1,0,0,3,4,1
+2026-07-11,Orlando Magic,Noah Penda,29,12,2,6,1,4,4,4,1,7,2,2,2,6,4,1
+2026-07-11,Orlando Magic,Jase Richardson,30,15,4,8,3,5,3,3,2,5,6,0,0,0,4,1
+2026-07-11,Orlando Magic,Alex Morales,26,4,1,8,0,5,1,1,2,7,4,0,0,2,2,1
+2026-07-11,Orlando Magic,Lester Quinones,24,15,6,10,2,5,1,1,0,1,1,0,0,2,5,1
+2026-07-11,Orlando Magic,Izaiyah Nelson,17,6,2,2,0,0,1,1,0,2,2,2,1,0,4,1
+2026-07-11,Orlando Magic,Phillip Wheeler,13,9,1,2,1,1,3,3,1,4,1,1,0,3,1,1
+2026-07-11,Orlando Magic,TyTy Washington,17,9,4,6,1,2,0,0,0,3,2,1,0,0,1,1
+2026-07-11,Orlando Magic,Johnell Davis,5,3,1,2,1,2,0,0,0,0,0,0,0,1,0,1
+2026-07-11,Orlando Magic,Keon Johnson,16,5,2,7,1,4,0,0,0,2,0,2,0,2,1,1
+2026-07-11,New Orleans Pelicans,Hunter Dickinson,26,21,9,18,3,6,0,1,2,3,3,0,0,0,4,1
+2026-07-11,New Orleans Pelicans,Jalon Moore,23,13,4,7,0,2,3,4,2,4,1,3,0,2,3,1
+2026-07-11,New Orleans Pelicans,Micah Peavy,22,9,2,6,1,2,2,2,0,1,1,1,0,0,3,1
+2026-07-11,New Orleans Pelicans,Kobe Bufkin,31,19,7,15,1,7,3,3,1,6,5,4,1,2,2,1
+2026-07-11,New Orleans Pelicans,Markquis Nowell,17,4,1,4,1,2,1,2,0,1,6,2,0,0,4,1
+2026-07-11,New Orleans Pelicans,Melvin Council Jr.,20,6,3,4,0,1,0,0,1,2,2,1,0,1,0,1
+2026-07-11,New Orleans Pelicans,Malik Dia,12,6,2,7,2,2,0,0,0,4,0,1,1,0,1,1
+2026-07-11,New Orleans Pelicans,Christian Shumate,10,3,1,2,1,2,0,0,0,3,1,0,0,1,1,1
+2026-07-11,New Orleans Pelicans,Nate Mensah,14,2,1,1,0,0,0,0,1,4,0,0,2,0,4,1
+2026-07-11,New Orleans Pelicans,Jaron Pierre,25,12,4,15,0,5,2,2,0,2,1,1,0,1,5,1
+2026-07-11,Charlotte Hornets,Ryan Kalkbrenner,27,6,3,4,0,0,0,1,0,4,3,0,4,2,4,1
+2026-07-11,Charlotte Hornets,Tidjane Salaun,18,12,5,12,1,7,1,3,2,9,2,0,0,1,2,1
+2026-07-11,Charlotte Hornets,Liam McNeeley,27,17,4,10,2,7,5,9,1,5,5,0,2,6,1,1
+2026-07-11,Charlotte Hornets,Christian Anderson,28,12,5,14,2,8,0,0,1,3,0,1,1,3,3,1
+2026-07-11,Charlotte Hornets,Sion James,26,9,1,2,1,1,3,3,1,4,5,0,1,3,6,1
+2026-07-11,Charlotte Hornets,Hannes Steinbach,22,7,2,5,0,0,2,2,2,6,0,0,1,3,3,1
+2026-07-11,Charlotte Hornets,Wyatt Fricks,7,5,2,3,1,2,0,1,2,3,0,0,0,1,0,1
+2026-07-11,Charlotte Hornets,Michael Ajayi,21,12,4,7,1,2,2,3,3,9,0,1,1,3,2,1
+2026-07-11,Charlotte Hornets,Latrell Wrightsell,10,3,1,5,1,3,0,0,1,2,0,0,0,0,1,1
+2026-07-11,Charlotte Hornets,Kylan Boswell,15,8,3,3,2,2,0,1,4,4,7,1,0,0,0,1
+2026-07-11,Indiana Pacers,Rienk Mast,30,10,4,12,2,7,0,0,3,9,3,0,0,3,2,1
+2026-07-11,Indiana Pacers,Jalen Slawson,28,26,8,16,1,5,6,7,0,5,1,1,1,2,4,1
+2026-07-11,Indiana Pacers,Tamin Lipsey,27,3,1,5,1,4,0,0,1,2,2,0,0,1,4,1
+2026-07-11,Indiana Pacers,Braden Smith,28,16,3,6,1,3,6,7,0,2,5,2,0,1,2,1
+2026-07-11,Indiana Pacers,Taelon Peter,28,6,2,5,0,3,1,1,0,2,2,1,0,2,2,1
+2026-07-11,Indiana Pacers,Yuki Kawamura,19,12,2,4,1,2,4,5,0,3,3,0,0,2,2,1
+2026-07-11,Indiana Pacers,Keion Brooks,14,11,2,6,1,3,3,3,1,4,0,0,0,3,2,1
+2026-07-11,Indiana Pacers,Gabe McGlothan,14,3,1,7,1,4,0,0,0,2,0,0,0,0,4,1
+2026-07-11,Indiana Pacers,Keba Keita,12,6,2,2,0,0,1,2,0,1,1,0,0,1,1,1
+2026-07-11,Indiana Pacers,Taevion Kinsey,10,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1
+2026-07-11,Philadelphia 76ers,Saint Thomas,19,8,4,9,0,3,0,1,2,7,2,1,0,1,5,1
+2026-07-11,Philadelphia 76ers,Johni Broome,33,23,9,19,1,7,2,4,7,11,3,1,1,3,5,1
+2026-07-11,Philadelphia 76ers,Taye Fields,12,1,0,0,0,0,1,2,1,2,0,2,0,0,3,1
+2026-07-11,Philadelphia 76ers,Labaron Philon,34,24,9,22,2,5,2,4,0,3,6,1,0,2,3,1
+2026-07-11,Philadelphia 76ers,Dante Maddox Jr.,30,15,5,11,3,8,2,2,2,6,3,0,0,2,2,1
+2026-07-11,Philadelphia 76ers,Mylik Wilson,13,2,1,3,0,1,0,0,0,1,2,2,1,1,2,1
+2026-07-11,Philadelphia 76ers,Gerald Ayayi,17,2,1,4,0,2,0,2,2,5,0,0,0,0,6,1
+2026-07-11,Philadelphia 76ers,Amani Lyles,11,6,1,2,0,0,2,3,2,4,0,2,0,1,2,1
+2026-07-11,Philadelphia 76ers,Duke Miles,8,0,0,2,0,2,0,0,0,1,0,1,0,1,0,1
+2026-07-11,Philadelphia 76ers,Matt Rogers,20,17,7,8,3,4,0,0,1,3,1,0,0,0,3,1
+2026-07-11,Philadelphia 76ers,Isaac Johnson,13,2,1,5,0,4,0,0,2,4,2,0,1,2,1,1
+2026-07-11,New York Knicks,Liam Robbins,13,0,0,2,0,2,0,2,0,2,1,0,0,5,6,1
+2026-07-11,New York Knicks,Mohamed Diawara,26,0,0,5,0,3,0,0,1,5,1,0,1,1,3,1
+2026-07-11,New York Knicks,Pacome Dadiet,23,13,4,12,1,6,2,2,0,3,1,2,1,3,1,1
+2026-07-11,New York Knicks,Tyler Nickel,30,16,6,14,4,11,0,1,0,2,1,0,2,1,1,1
+2026-07-11,New York Knicks,Dillon Jones,21,6,2,5,0,2,1,1,0,1,3,2,1,2,1,1
+2026-07-11,New York Knicks,Nick Jourdain,8,0,0,1,0,1,0,0,0,2,2,0,0,0,1,1
+2026-07-11,New York Knicks,Lance Ware,13,0,0,0,0,0,0,2,0,1,0,0,1,0,2,1
+2026-07-11,New York Knicks,Akoi Yuot,1,0,0,3,0,0,0,0,3,3,0,0,0,0,0,1
+2026-07-11,New York Knicks,Will Johnston,19,2,1,4,0,1,0,0,0,2,0,1,0,0,1,1
+2026-07-11,New York Knicks,Langston Wilson,6,0,0,3,0,1,0,0,2,4,1,1,2,1,1,1
+2026-07-11,New York Knicks,Toby Okani,5,0,0,1,0,0,0,0,0,0,0,0,0,1,0,1
+2026-07-11,New York Knicks,Keith Palek III,3,0,0,2,0,1,0,0,0,0,0,0,0,0,0,1
+2026-07-11,New York Knicks,Jack Kayil,21,12,5,14,2,7,0,0,3,5,3,2,0,1,1,1
+2026-07-11,New York Knicks,Oziyah Sellers,5,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1
+2026-07-11,New York Knicks,Erik Reynolds II,7,0,0,2,0,1,0,1,1,2,0,0,0,2,1,1
+2026-07-11,San Antonio Spurs,Tarris Reed Jr.,23,5,2,9,0,0,1,2,4,9,2,1,0,5,7,1
+2026-07-11,San Antonio Spurs,Maliq Brown,24,8,2,2,0,0,2,2,4,8,1,2,1,4,6,1
+2026-07-11,San Antonio Spurs,Emanuel Miller,22,2,1,7,0,2,0,0,1,5,0,1,1,0,1,1
+2026-07-11,San Antonio Spurs,Ja'Kobi Gillespie,24,14,6,14,2,6,0,0,2,5,5,2,0,1,1,1
+2026-07-11,San Antonio Spurs,Carter Bryant,23,19,7,10,2,2,2,2,1,2,0,1,2,4,1,1
+2026-07-11,San Antonio Spurs,Miles Barnstable,2,0,0,0,0,0,0,0,0,1,1,0,0,0,0,1
+2026-07-11,San Antonio Spurs,David Muoka,5,2,1,1,0,0,0,0,0,0,0,0,1,0,2,1
+2026-07-11,San Antonio Spurs,Igor Milicic Jr.,13,5,2,4,1,3,0,0,1,4,2,0,1,0,0,1
+2026-07-11,San Antonio Spurs,Jayden Nunn,16,0,0,6,0,3,0,1,1,2,0,0,0,1,1,1
+2026-07-11,San Antonio Spurs,Zakai Zeigler,9,2,0,1,0,1,2,2,1,1,2,0,0,2,0,1
+2026-07-11,San Antonio Spurs,Tyon Grant-Foster,2,0,0,2,0,0,0,0,0,1,0,0,0,0,0,1
+2026-07-11,San Antonio Spurs,RJ Melendez,8,5,2,3,1,2,0,0,1,4,0,0,0,0,0,1
+2026-07-11,San Antonio Spurs,Hyunjung Lee,11,3,1,3,1,3,0,0,0,2,0,0,0,0,0,1
+2026-07-11,San Antonio Spurs,RJ Davis,18,5,2,9,1,5,0,0,0,3,2,1,0,3,1,1
+2026-07-11,Denver Nuggets,Giovanni Emejuru,20,2,1,2,0,0,0,0,1,4,0,0,0,1,1,1
+2026-07-11,Denver Nuggets,Bryce Hopkins,24,16,6,13,0,3,2,2,3,7,2,0,1,0,0,1
+2026-07-11,Denver Nuggets,KJ Simpson,29,19,6,15,3,8,3,4,2,4,4,1,0,5,3,1
+2026-07-11,Denver Nuggets,Mark Mitchell,15,0,0,0,0,0,0,0,0,1,1,0,2,0,2,1
+2026-07-11,Denver Nuggets,Erik Stevenson,21,18,7,13,4,7,0,0,2,3,2,2,0,0,2,1
+2026-07-11,Denver Nuggets,Efe Abogidi,13,10,4,7,2,4,0,0,1,4,0,1,0,1,3,1
+2026-07-11,Denver Nuggets,Osayi Osifo,7,13,5,5,0,0,3,3,1,5,0,0,0,1,3,1
+2026-07-11,Denver Nuggets,TJ Bamba,17,7,2,8,1,4,1,1,1,3,3,0,0,1,2,1
+2026-07-11,Denver Nuggets,Jahmi'us Ramsey,13,3,1,3,1,2,0,0,1,1,0,0,0,1,1,1
+2026-07-11,Denver Nuggets,Matthew Murrell,24,5,2,7,1,4,0,0,1,5,3,2,0,1,1,1
+2026-07-11,Denver Nuggets,Dejon Jarreau,17,8,4,12,0,0,0,0,0,7,3,1,1,1,0,1
+2026-07-11,Minnesota Timberwolves,Rocco Zikarsky,26,6,3,11,0,4,0,1,2,5,1,0,4,2,3,1
+2026-07-11,Minnesota Timberwolves,Isaiah Evans,26,4,2,15,0,9,0,0,4,5,1,0,1,2,1,1
+2026-07-11,Minnesota Timberwolves,Enrique Freeman,18,2,1,4,0,2,0,0,2,8,0,0,0,4,2,1
+2026-07-11,Minnesota Timberwolves,Zyon Pullin,30,24,8,16,2,4,3,4,1,5,3,0,0,1,1,1
+2026-07-11,Minnesota Timberwolves,Donovan Williams,27,16,5,11,0,2,3,3,1,3,3,2,0,0,2,1
+2026-07-11,Minnesota Timberwolves,Chris Mantis,11,3,1,3,1,2,0,0,0,3,0,0,0,0,0,1
+2026-07-11,Minnesota Timberwolves,Aidan Mahaney,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1
+2026-07-11,Minnesota Timberwolves,Nate Santos,27,14,4,7,4,6,1,1,1,3,1,1,0,3,5,1
+2026-07-11,Minnesota Timberwolves,Trey Kaufman-Renn,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1
+2026-07-11,Minnesota Timberwolves,Jaylin Williams,13,9,2,4,1,2,3,3,0,2,1,0,0,1,2,1
+2026-07-11,Minnesota Timberwolves,Damion Baugh,19,4,1,4,0,1,1,1,1,6,2,2,1,3,3,1
+2026-07-11,Atlanta Hawks,Zuby Ejiofor,27,13,3,6,2,2,3,5,3,6,2,2,3,2,1,1
+2026-07-11,Atlanta Hawks,Asa Newell,25,4,2,5,0,1,0,2,1,3,1,1,1,1,3,1
+2026-07-11,Atlanta Hawks,Gabe Madsen,18,4,1,4,0,2,1,1,0,2,1,1,0,0,4,1
+2026-07-11,Atlanta Hawks,Kingston Flemings,25,9,4,11,1,3,0,0,0,7,5,0,1,6,5,1
+2026-07-11,Atlanta Hawks,Isaac McKneely,20,5,2,5,1,4,0,0,0,2,1,0,0,0,2,1
+2026-07-11,Atlanta Hawks,Henri Veesaar,17,6,3,5,0,1,0,1,0,1,2,0,2,1,2,1
+2026-07-11,Atlanta Hawks,Zeke Mayo,14,11,3,5,1,3,2,2,0,2,0,3,0,1,0,1
+2026-07-11,Atlanta Hawks,Kobe Johnson,22,17,4,7,1,3,5,6,1,7,4,1,0,2,4,1
+2026-07-11,Atlanta Hawks,Devon Higgs,14,4,1,5,0,1,1,1,0,1,0,2,0,1,1,1
+2026-07-11,Atlanta Hawks,Isaiah Wong,19,10,2,5,2,2,2,2,0,2,0,2,0,2,1,1
+2026-07-11,Brooklyn Nets,Joshua Jefferson,26,9,1,8,0,4,5,6,0,1,1,2,0,2,3,1
+2026-07-11,Brooklyn Nets,Chaney Johnson,32,20,9,13,2,4,0,0,5,10,0,5,0,2,1,1
+2026-07-11,Brooklyn Nets,Danny Wolf,26,20,9,16,0,2,2,2,2,5,1,1,0,4,6,1
+2026-07-11,Brooklyn Nets,Ben Saraf,32,15,4,14,0,3,5,7,0,1,5,0,1,3,2,1
+2026-07-11,Brooklyn Nets,Drake Powell,24,4,0,4,0,2,2,2,0,2,2,0,0,1,0,1
+2026-07-11,Brooklyn Nets,Dain Dainja,8,0,0,2,0,0,0,0,1,3,1,0,0,0,2,1
+2026-07-11,Brooklyn Nets,Dion Brown,9,2,0,0,0,0,1,1,2,2,0,0,0,3,3,1
+2026-07-11,Brooklyn Nets,Tyler Bilodeau,21,5,1,6,0,4,2,2,0,4,1,0,0,2,3,1
+2026-07-11,Brooklyn Nets,Ben Humrichous,15,1,0,5,0,5,1,1,1,2,0,0,1,1,1,1
+2026-07-11,Brooklyn Nets,Hunter Sallis,7,0,0,1,0,0,0,0,0,2,0,0,2,1,3,1
+2026-07-11,Houston Rockets,Michael Foster Jr.,15,5,2,3,1,1,0,1,0,2,1,0,0,2,0,1
+2026-07-11,Houston Rockets,Isaiah Crawford,32,16,4,10,3,7,3,4,1,4,1,1,2,3,5,1
+2026-07-11,Houston Rockets,Bruce Thornton,32,17,6,17,3,6,1,2,2,6,6,5,0,4,2,1
+2026-07-11,Houston Rockets,Quadir Copeland,32,9,3,5,1,3,1,2,0,2,5,4,0,0,8,1
+2026-07-11,Houston Rockets,Tristen Newton,28,18,4,13,3,7,3,4,3,4,0,2,0,3,3,1
+2026-07-11,Houston Rockets,Oscar Cluff,17,6,1,2,0,1,2,2,2,5,0,0,0,3,5,1
+2026-07-11,Houston Rockets,Daishen Nix,24,16,4,9,3,7,3,4,0,3,2,2,0,2,4,1
+2026-07-11,Houston Rockets,Ben Middlebrooks,7,0,0,1,0,1,0,0,0,0,0,0,0,0,1,1
+2026-07-11,Houston Rockets,Chris Ledlum,4,2,1,2,0,1,0,0,0,1,0,0,0,0,0,1
+2026-07-11,Houston Rockets,Miller Kopp,11,0,0,5,0,5,0,0,0,3,0,0,1,1,3,1
+2026-07-11,Toronto Raptors,Nate Bittle,19,9,2,5,1,3,2,2,1,4,1,1,1,3,4,1
+2026-07-11,Toronto Raptors,Allen Graves,27,9,4,7,1,3,0,0,0,3,2,1,0,2,6,1
+2026-07-11,Toronto Raptors,Chucky Hepburn,29,2,1,5,0,3,0,0,0,5,8,2,0,3,5,1
+2026-07-11,Toronto Raptors,Nimari Burnett,22,14,4,9,1,5,2,3,1,3,3,3,0,1,3,1
+2026-07-11,Toronto Raptors,Seth Lundy,29,23,8,11,6,9,1,1,2,5,1,1,0,2,2,1
+2026-07-11,Toronto Raptors,AJ Hoggard,21,7,2,8,1,2,1,1,1,6,6,2,0,3,4,1
+2026-07-11,Toronto Raptors,Tyson Degenhart,10,0,0,2,0,1,0,0,0,1,0,0,0,1,3,1
+2026-07-11,Toronto Raptors,Tyreke Key,18,19,4,6,3,4,4,4,1,2,0,1,1,1,0,1
+2026-07-11,Toronto Raptors,Jamarion Sharp,16,17,5,5,0,0,5,8,3,7,0,0,2,1,2,1
+2026-07-11,Toronto Raptors,Jaden Bradley,8,2,1,3,0,1,0,0,0,1,1,0,0,3,1,1
+2026-07-11,Los Angeles Lakers,Adou Thiero,26,15,4,12,0,2,4,4,3,4,1,1,0,4,4,1
+2026-07-11,Los Angeles Lakers,Arthur Kaluma,30,34,11,16,6,10,3,3,0,5,0,0,0,5,2,1
+2026-07-11,Los Angeles Lakers,Anton Watson,13,0,0,2,0,0,0,0,0,1,0,2,0,1,0,1
+2026-07-11,Los Angeles Lakers,William Hickey,15,2,1,3,0,2,0,1,1,5,2,0,0,1,3,1
+2026-07-11,Los Angeles Lakers,Chris Manon,31,10,4,10,0,2,1,1,2,8,1,0,0,1,4,1
+2026-07-11,Los Angeles Lakers,William Kyle III,10,4,2,2,0,0,0,1,0,0,0,0,0,1,4,1
+2026-07-11,Los Angeles Lakers,AK Okereke,18,0,0,3,0,2,0,0,2,3,5,2,1,0,1,1
+2026-07-11,Los Angeles Lakers,Luke Goode,10,0,0,1,0,1,0,0,0,2,1,1,0,2,2,1
+2026-07-11,Los Angeles Lakers,Zhaire Smith,12,6,3,3,0,0,0,0,0,0,3,2,1,1,1,1
+2026-07-11,Los Angeles Lakers,Peter Suder,17,14,5,8,2,5,1,2,0,0,2,0,0,1,5,1
+2026-07-11,Los Angeles Lakers,Jon Elmore,19,6,2,3,2,3,0,0,0,4,5,3,2,1,0,1
+2026-07-11,Dallas Mavericks,Sergio De Larrea,28,5,2,4,1,1,0,1,0,3,4,2,1,4,2,1
+2026-07-11,Dallas Mavericks,Tobi Lawal,22,8,2,7,2,5,1,1,0,5,0,0,0,0,1,1
+2026-07-11,Dallas Mavericks,Morez Johnson Jr.,28,10,4,8,0,1,1,2,2,5,0,2,4,1,7,1
+2026-07-11,Dallas Mavericks,John Poulakidas,20,5,1,4,1,3,1,1,0,1,1,1,0,1,3,1
+2026-07-11,Dallas Mavericks,Ryan Nembhard,29,12,3,11,0,2,3,3,0,2,5,1,0,5,2,1
+2026-07-11,Dallas Mavericks,Vsevolod Ishchenko,23,8,2,7,0,2,2,2,4,4,0,2,0,6,3,1
+2026-07-11,Dallas Mavericks,Lucas Dufeal,2,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1
+2026-07-11,Dallas Mavericks,Tyler Smith,18,9,3,8,1,6,1,1,1,2,2,0,0,0,1,1
+2026-07-11,Dallas Mavericks,Jorge Diaz Graham,8,3,1,2,1,2,0,0,0,0,2,0,0,2,1,1
+2026-07-11,Dallas Mavericks,Darin Green Jr.,2,6,2,2,2,2,0,0,0,0,0,0,0,0,0,1
+2026-07-11,Dallas Mavericks,Guillermo Diaz Graham,2,0,0,0,0,0,0,0,1,2,0,0,0,0,0,1
+2026-07-11,Dallas Mavericks,Ja'Vier Francis,2,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1
+2026-07-11,Dallas Mavericks,Jaden Springer,11,2,1,2,0,0,0,0,0,0,0,0,0,1,1,1
+2026-07-11,Dallas Mavericks,Kaodirichi Akobundu-Ehiogu,5,2,1,1,0,0,0,1,0,1,0,0,0,0,1,1
+2026-07-12,Phoenix Suns,Khaman Maluach,28,15,5,9,2,4,2,3,1,15,1,1,2,0,3,1
+2026-07-12,Phoenix Suns,Rasheer Fleming,28,11,4,10,1,4,1,1,2,4,2,1,2,2,5,1
+2026-07-12,Phoenix Suns,Koa Peat,28,12,5,10,0,1,1,3,0,4,1,2,0,4,7,1
+2026-07-12,Phoenix Suns,Koby Brea,31,2,1,10,0,6,0,0,0,4,1,1,0,2,1,1
+2026-07-12,Phoenix Suns,Darius Brown II,23,18,7,12,3,7,1,1,1,5,4,1,0,3,1,1
+2026-07-12,Phoenix Suns,Sam Hoiberg,6,0,0,1,0,1,0,0,0,1,0,0,0,1,1,1
+2026-07-12,Phoenix Suns,Jameer Nelson Jr.,16,8,3,8,0,2,1,3,0,0,0,2,0,3,1,1
+2026-07-12,Phoenix Suns,Corey Camper,12,0,0,1,0,0,0,0,1,3,0,1,0,1,1,1
+2026-07-12,Phoenix Suns,Jake Stephens,2,0,0,0,0,0,0,1,0,1,0,0,0,0,0,1
+2026-07-12,Phoenix Suns,Devin Askew,4,0,0,1,0,1,0,0,0,0,0,0,0,0,1,1
+2026-07-12,Phoenix Suns,Javonte Cooke,21,9,3,10,0,4,2,2,0,4,1,1,0,2,1,1
+2026-07-12,New Orleans Pelicans,Hunter Dickinson,27,7,3,9,1,5,0,1,2,8,2,1,0,1,2,1
+2026-07-12,New Orleans Pelicans,Jalon Moore,15,3,1,4,1,2,0,0,1,2,0,1,0,3,5,1
+2026-07-12,New Orleans Pelicans,Jaron Pierre,29,16,5,17,3,10,3,3,0,3,0,0,0,2,3,1
+2026-07-12,New Orleans Pelicans,Kobe Bufkin,28,15,4,11,1,6,4,4,0,4,2,2,1,5,4,1
+2026-07-12,New Orleans Pelicans,Markquis Nowell,19,8,3,6,2,4,0,0,1,3,3,4,0,1,0,1
+2026-07-12,New Orleans Pelicans,Nate Mensah,11,0,0,2,0,0,0,0,1,6,0,0,1,1,0,1
+2026-07-12,New Orleans Pelicans,Malik Dia,23,18,6,12,1,4,3,4,2,8,1,2,2,2,4,1
+2026-07-12,New Orleans Pelicans,Melvin Council Jr.,25,9,3,8,1,2,1,1,0,1,4,2,1,3,4,1
+2026-07-12,New Orleans Pelicans,Solomon Washington,9,0,0,1,0,0,0,0,0,3,2,0,0,0,1,1
+2026-07-12,New Orleans Pelicans,Christian Shumate,11,2,1,2,0,0,0,0,3,8,1,0,0,1,0,1
+2026-07-12,New Orleans Pelicans,Chris Bell,3,3,1,2,1,1,0,0,0,0,0,0,0,0,0,1
+2026-07-12,Cleveland Cavaliers,Ernest Udeh Jr.,19,6,1,3,0,0,2,3,2,6,1,4,2,0,5,1
+2026-07-12,Cleveland Cavaliers,Riley Minix,27,8,3,8,0,4,2,2,2,3,2,1,1,3,2,1
+2026-07-12,Cleveland Cavaliers,Nae'Qwan Tomlin,29,17,7,10,1,3,1,2,1,6,3,1,4,2,3,1
+2026-07-12,Cleveland Cavaliers,Meleek Thomas,34,30,10,24,4,10,3,3,2,4,7,4,0,2,3,1
+2026-07-12,Cleveland Cavaliers,Malaki Branham,22,14,4,9,1,3,3,3,1,3,0,1,0,2,2,1
+2026-07-12,Cleveland Cavaliers,Rashaun Agee,14,4,2,7,0,0,0,0,2,4,1,2,0,2,4,1
+2026-07-12,Cleveland Cavaliers,Jaxson Robinson,21,6,2,5,2,5,0,0,0,3,2,2,1,2,4,1
+2026-07-12,Cleveland Cavaliers,Sean East II,8,4,2,3,0,1,0,0,0,0,0,1,0,2,2,1
+2026-07-12,Cleveland Cavaliers,Xaivian Lee,9,5,2,3,1,2,0,0,0,0,2,1,0,1,1,1
+2026-07-12,Cleveland Cavaliers,Dane Goodwin,17,0,0,1,0,0,0,0,1,2,0,1,0,1,2,1
+2026-07-12,Detroit Pistons,Ugonna Onyenso,21,5,2,3,1,1,0,0,4,8,0,0,5,4,2,1
+2026-07-12,Detroit Pistons,Isaac Jones,30,16,2,9,0,2,6,7,4,10,3,1,0,1,2,1
+2026-07-12,Detroit Pistons,Ebuka Okorie,31,14,5,17,0,2,3,5,0,3,6,7,0,3,3,1
+2026-07-12,Detroit Pistons,Chaz Lanier,30,25,9,17,7,12,0,0,1,3,3,1,0,3,3,1
+2026-07-12,Detroit Pistons,Brice Williams,27,21,6,9,6,9,3,3,0,4,2,1,1,3,0,1
+2026-07-12,Detroit Pistons,Jaden Henley,12,4,0,6,0,2,2,2,1,2,0,1,0,3,1,1
+2026-07-12,Detroit Pistons,Drake Allen,10,2,1,3,0,0,0,0,1,1,1,1,0,1,3,1
+2026-07-12,Detroit Pistons,Steven Crowl,8,0,0,0,0,0,0,0,1,1,2,0,1,0,1,1
+2026-07-12,Detroit Pistons,Basheer Jihad,9,0,0,3,0,2,0,1,2,3,1,1,0,2,0,1
+2026-07-12,Detroit Pistons,Corey Stephenson,10,6,1,3,0,1,2,3,0,2,0,0,0,1,3,1
+2026-07-12,Detroit Pistons,Roddy Gayle,11,10,4,4,2,2,0,0,0,3,0,0,0,1,1,1
+2026-07-12,Charlotte Hornets,Ryan Kalkbrenner,22,0,0,3,0,0,0,0,0,1,1,3,4,1,4,1
+2026-07-12,Charlotte Hornets,Tidjane Salaun,27,7,1,5,1,3,2,2,1,4,0,2,1,3,5,1
+2026-07-12,Charlotte Hornets,Liam McNeeley,26,20,6,14,1,4,4,5,2,8,1,1,1,5,3,1
+2026-07-12,Charlotte Hornets,Christian Anderson,28,13,5,10,3,8,0,1,0,4,1,2,0,4,3,1
+2026-07-12,Charlotte Hornets,Sion James,25,8,3,10,0,5,1,1,0,5,1,0,0,2,2,1
+2026-07-12,Charlotte Hornets,Michael Ajayi,16,5,1,3,1,3,1,2,1,6,1,0,0,0,1,1
+2026-07-12,Charlotte Hornets,Hannes Steinbach,23,8,3,4,0,0,1,1,2,3,2,0,0,5,5,1
+2026-07-12,Charlotte Hornets,Wyatt Fricks,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+2026-07-12,Charlotte Hornets,Latrell Wrightsell,11,5,2,5,1,3,0,0,0,0,0,1,0,2,1,1
+2026-07-12,Charlotte Hornets,Kylan Boswell,11,4,2,3,0,0,0,1,0,2,4,0,0,1,1,1
+2026-07-12,Charlotte Hornets,Josiah Allick,1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,1
+2026-07-12,Charlotte Hornets,Max MacKinnon,1,5,2,2,1,1,0,0,0,0,0,0,0,0,0,1
+2026-07-12,Charlotte Hornets,Cameron Matthews,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1
+2026-07-12,Charlotte Hornets,Terrell Brown Jr.,8,0,0,1,0,1,0,0,0,2,4,0,0,1,0,1
+2026-07-12,Boston Celtics,Amari Williams,27,6,2,5,0,0,1,2,2,5,3,1,4,5,3,1
+2026-07-12,Boston Celtics,Dillon Mitchell,29,24,10,20,2,5,1,3,7,8,2,6,2,2,2,1
+2026-07-12,Boston Celtics,Hugo Gonzalez,33,14,3,10,3,9,3,3,0,4,4,3,1,5,5,1
+2026-07-12,Boston Celtics,Curtis Jones,6,0,0,2,0,1,0,0,1,2,1,0,0,0,1,1
+2026-07-12,Boston Celtics,John Tonje,28,17,6,10,3,4,1,3,2,5,0,1,0,3,4,1
+2026-07-12,Boston Celtics,Mohammad Amini,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+2026-07-12,Boston Celtics,Milos Uzan,31,13,5,11,3,6,0,0,1,4,6,0,0,2,3,1
+2026-07-12,Boston Celtics,Chauncey Wiggins,1,0,0,1,0,1,0,0,0,0,0,0,0,0,0,1
+2026-07-12,Boston Celtics,Day Day Thomas,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1
+2026-07-12,Boston Celtics,Tucker DeVries,18,11,3,7,3,7,1,1,0,1,2,0,0,0,3,1
+2026-07-12,Boston Celtics,Caleb Grill,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+2026-07-12,Boston Celtics,Chris Cenac Jr.,19,2,1,7,0,2,0,1,1,5,1,0,1,0,2,1
+2026-07-12,Boston Celtics,Nick Pringle,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+2026-07-12,Boston Celtics,Alondes Williams,4,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1
+2026-07-12,Oklahoma City Thunder,Aday Mara,24,10,4,6,0,1,1,1,1,9,4,0,1,3,1,1
+2026-07-12,Oklahoma City Thunder,Bennett Stirtz,26,13,5,10,1,4,1,1,0,1,2,0,0,0,1,1
+2026-07-12,Oklahoma City Thunder,Josh Dix,18,5,2,7,1,3,0,0,0,2,2,0,0,0,1,1
+2026-07-12,Oklahoma City Thunder,Brooks Barnhizer,22,6,3,6,0,2,0,0,1,5,1,1,1,3,0,1
+2026-07-12,Oklahoma City Thunder,Buddy Boeheim,19,6,2,7,2,6,0,1,1,1,0,0,0,0,4,1
+2026-07-12,Oklahoma City Thunder,Elijah Mahi,4,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1
+2026-07-12,Oklahoma City Thunder,Christoph Tilly,12,6,3,5,0,0,0,1,1,1,0,2,0,0,3,1
+2026-07-12,Oklahoma City Thunder,Bryce Harris,4,4,1,2,1,1,1,4,1,1,0,0,0,0,0,1
+2026-07-12,Oklahoma City Thunder,Anthony Pritchard,18,2,1,2,0,0,0,1,0,2,3,0,0,3,2,1
+2026-07-12,Oklahoma City Thunder,Jabri Abdur-Rahim,4,5,2,3,1,2,0,0,0,0,0,0,0,0,0,1
+2026-07-12,Oklahoma City Thunder,Lamar Wilkerson,15,3,1,5,1,4,0,0,0,0,2,0,0,0,1,1
+2026-07-12,Oklahoma City Thunder,Steven Ashworth,12,6,0,3,0,3,3,3,1,2,3,0,0,3,3,1
+2026-07-12,Oklahoma City Thunder,Sam Alexis,4,2,1,3,0,0,0,0,1,1,0,0,1,0,1,1
+2026-07-12,Oklahoma City Thunder,Payton Sandfort,18,11,5,9,1,4,0,0,0,0,0,0,0,1,2,1
+2026-07-12,Golden State Warriors,Yaxel Lendeborg,24,14,5,14,4,8,0,0,0,2,4,3,0,2,1,1
+2026-07-12,Golden State Warriors,Malevy Leons,22,9,2,6,1,2,2,2,6,11,2,0,0,2,1,1
+2026-07-12,Golden State Warriors,Will Richard,24,9,3,6,1,3,1,1,0,1,2,1,0,2,0,1
+2026-07-12,Golden State Warriors,Graham Ike,18,11,4,8,1,2,1,1,1,8,2,0,0,0,1,1
+2026-07-12,Golden State Warriors,LJ Cryer,22,8,3,9,2,8,0,1,0,1,5,1,0,0,0,1
+2026-07-12,Golden State Warriors,Nick Boyd,18,14,5,6,2,3,1,1,0,2,2,1,0,0,4,1
+2026-07-12,Golden State Warriors,Lajae Jones,15,10,3,6,1,3,2,2,5,6,0,0,0,1,1,1
+2026-07-12,Golden State Warriors,Chance McMillian,16,10,4,6,2,4,0,0,0,3,0,0,0,0,1,1
+2026-07-12,Golden State Warriors,Chase Hunter,3,3,1,2,1,1,0,0,1,1,0,0,0,0,0,1
+2026-07-12,Golden State Warriors,Jacksen Moni,3,0,0,2,0,2,0,0,0,0,0,0,0,0,0,1
+2026-07-12,Golden State Warriors,Lachlan Olbrich,19,14,3,6,0,2,4,4,2,4,1,3,0,2,6,1
+2026-07-12,Golden State Warriors,Colby Jones,13,2,1,5,0,2,0,1,0,3,3,0,1,1,1,1
+2026-07-12,Golden State Warriors,Jack Clark,3,0,0,1,0,1,0,0,1,3,2,1,0,0,2,1
+2026-07-12,Orlando Magic,Colin Castleton,33,21,10,16,1,2,0,4,2,7,2,0,1,1,3,1
+2026-07-12,Orlando Magic,Phillip Wheeler,30,18,6,11,4,6,1,3,0,1,0,1,3,1,5,1
+2026-07-12,Orlando Magic,TyTy Washington,30,12,4,8,2,3,1,2,0,6,7,4,0,3,2,1
+2026-07-12,Orlando Magic,Alex Morales,30,10,4,6,1,2,1,1,2,5,2,3,0,1,6,1
+2026-07-12,Orlando Magic,Lester Quinones,29,30,9,14,4,7,7,9,0,8,3,3,0,5,4,1
+2026-07-12,Orlando Magic,Malik Reneau,8,0,0,3,0,1,0,0,1,4,0,0,1,1,2,1
+2026-07-12,Orlando Magic,Keon Johnson,17,15,2,4,0,2,6,6,1,2,3,0,1,3,3,1
+2026-07-12,Orlando Magic,Will Baker,3,0,0,0,0,0,0,0,0,0,0,0,0,1,2,1
+2026-07-12,Orlando Magic,Izaiyah Nelson,4,0,0,0,0,0,0,1,0,1,0,0,1,0,1,1
+2026-07-12,Orlando Magic,Johnell Davis,11,4,1,2,0,1,1,2,0,3,0,0,0,1,1,1
+2026-07-12,Orlando Magic,Ace Baldwin Jr.,14,2,0,1,0,1,1,2,0,2,2,3,2,2,0,1
+2026-07-12,Portland Trail Blazers,DJ Steward,18,10,4,11,2,4,0,0,1,4,5,0,0,4,2,1
+2026-07-12,Portland Trail Blazers,Frankie Fidler,21,9,1,7,1,3,2,2,0,4,2,2,1,3,2,1
+2026-07-12,Portland Trail Blazers,Andrew Carr,19,7,2,6,0,2,2,2,4,8,2,1,1,1,5,1
+2026-07-12,Portland Trail Blazers,Chris Youngblood,29,14,5,14,1,8,2,3,0,2,1,1,0,3,4,1
+2026-07-12,Portland Trail Blazers,Jayson Kent,32,20,4,9,3,6,4,4,4,8,1,1,0,1,6,1
+2026-07-12,Portland Trail Blazers,Aliou Diarra,15,4,1,4,0,0,1,1,3,6,0,0,0,0,1,1
+2026-07-12,Portland Trail Blazers,Jalen Bridges,22,6,2,6,1,5,1,1,1,3,0,2,0,0,4,1
+2026-07-12,Portland Trail Blazers,Jaylen Martin,14,11,5,6,1,1,0,0,2,3,1,0,0,3,2,1
+2026-07-12,Portland Trail Blazers,Barry Dunning Jr.,2,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+2026-07-12,Portland Trail Blazers,Quincy Olivari,22,13,4,13,3,6,1,2,0,3,3,1,0,5,4,1
+2026-07-12,Portland Trail Blazers,Flynn Cameron,16,11,3,8,3,6,1,2,1,2,2,1,0,2,5,1
+2026-07-12,Sacramento Kings,Maxime Raynaud,31,20,7,15,2,5,2,3,5,12,3,1,0,2,5,1
+2026-07-12,Sacramento Kings,Dylan Cardwell,23,6,3,8,0,0,0,0,6,8,4,2,5,0,4,1
+2026-07-12,Sacramento Kings,Alex Karaban,23,3,1,3,1,2,0,0,0,2,0,0,0,1,3,1
+2026-07-12,Sacramento Kings,Darius Acuff,28,12,4,14,0,4,3,4,0,1,4,0,1,5,4,1
+2026-07-12,Sacramento Kings,Nique Clifford,31,17,5,13,2,6,3,3,1,4,4,1,0,5,3,1
+2026-07-12,Sacramento Kings,Mitch Mascari,1,3,1,2,1,1,0,0,0,0,0,0,0,0,1,1
+2026-07-12,Sacramento Kings,Marquel Sutton,4,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1
+2026-07-12,Sacramento Kings,Emanuel Sharp,22,7,2,8,1,6,1,1,0,2,2,1,0,0,7,1
+2026-07-12,Sacramento Kings,Jonathan Mogbo,20,11,3,5,0,0,3,3,4,9,2,0,2,0,0,1
+2026-07-12,Sacramento Kings,Viktor Lakhin,1,2,1,1,0,0,0,0,1,1,1,0,0,0,0,1
+2026-07-12,Sacramento Kings,Isaiah Stevens,4,0,0,1,0,1,0,1,0,0,1,0,1,0,1,1
+2026-07-12,Sacramento Kings,Adam Flagler,11,4,1,2,0,1,1,2,0,1,2,0,0,0,1,1
+2026-07-12,Washington Wizards,AJ Dybantsa,24,23,6,15,1,6,5,6,0,7,2,3,2,3,0,1
+2026-07-12,Washington Wizards,Felix Okpara,20,4,1,2,0,0,1,1,2,4,1,0,3,1,1,1
+2026-07-12,Washington Wizards,Chris Livingston,24,4,1,2,0,0,1,2,1,2,4,2,0,0,5,1
+2026-07-12,Washington Wizards,Will Riley,29,32,9,14,6,8,5,6,2,6,3,0,0,2,3,1
+2026-07-12,Washington Wizards,Reece Beekman,25,9,3,6,3,4,0,1,2,4,4,3,1,2,2,1
+2026-07-12,Washington Wizards,Norris Agbakoko,10,4,1,1,0,0,1,2,1,4,0,0,2,0,1,1
+2026-07-12,Washington Wizards,Seth Trimble,20,8,3,10,0,3,1,1,3,5,1,2,0,0,1,1
+2026-07-12,Washington Wizards,Julian Reese,9,4,1,1,0,0,1,2,2,5,1,0,0,0,2,1
+2026-07-12,Washington Wizards,RJ Nembhard Jr.,11,4,2,7,0,1,0,0,0,0,1,0,0,2,2,1
+2026-07-12,Washington Wizards,Kadary Richmond,17,9,1,4,1,3,4,4,1,3,3,1,0,0,2,1
+2026-07-12,Washington Wizards,John Camden,11,3,1,6,1,5,0,0,2,2,0,0,0,0,3,1
